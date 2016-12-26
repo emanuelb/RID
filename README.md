@@ -13,3 +13,13 @@ Detection of bugs that cause builds/packaging to generate non-reproducible artif
 The last step after detection is fixing :)
 
 This tool try to automate as much as possible the #3 step.
+
+# How to use
+
+Install Dependencies:
+
+pip3 install beautifulsoup4 sqlalchemy
+
+Run:
+
+python3 rid.py diffoscope_txt_or_html_output_file
