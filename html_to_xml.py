@@ -11,12 +11,23 @@ from bs4 import BeautifulSoup
 
 # for 'file list'
 def remove_prems(list):
+    # -drwxr-xr-x
     return [re.sub('[d-](?:[r-][w-][x-]){3}', '', line, 1) for line in list]
 
 # for javap result
 def remove_linenum(list):    
     return [re.sub('(.*?)(#\d+[.:]?#?\d+?\s+)', r'\1', re.sub('^\s+#?\d+:?\s+', '', line, 1), 1) for line in list]
- 
+
+# for 'file list'
+def remove_timestamps_long(list): 
+    # 2015-10-06 03:37:40.000000
+    return [re.sub(' \d{4}\-\d{2}\-\d{2} \d{2}:\d{2}:\d{2}\.\d{6} ', '', line, 1) for line in list]
+
+# for 'zipinfo'
+def remove_timestamps_short(list):
+    # 08-Feb-24 11:12
+    return [re.sub('\d{2}\-[A-Z][a-z]{2}\-\d{2} \d{2}:\d{2} ', '', line, 1) for line in list]
+    
 # To strip <ins> & <del> for hex output in hexdump
 def StripLenExcludeTags(text_with_tags, length_to_strip):
     chars_added = 0
@@ -239,8 +250,15 @@ def process( filecontent , file_path_input ):
                     ET.SubElement(cur, "order").text = "sorted line order diff"
                 elif retcur.find('processor') is not None: 
                     this_processor = retcur.find('processor').text
-                    if this_processor == "file list" and left_diff_arr_len == len(list(set(remove_prems(right_diff_arr)+remove_prems(left_diff_arr)))):
-                        ET.SubElement(cur, "order").text = "file-list: sorted file order without prems"
+                    if this_processor in ["file list","zipinfo {}"]: #TBD - parse output of zipinfo / file list, thus detect even if more variations apply [order+timestamp+user+umask]
+                        right_diff_arr = remove_prems(right_diff_arr)
+                        left_diff_arr = remove_prems(left_diff_arr)
+                        if left_diff_arr_len == len(list(set(right_diff_arr+left_diff_arr))):
+                            ET.SubElement(cur, "order").text = "file-list: sorted file order without prems"
+                        elif left_diff_arr_len == len(list(set(remove_timestamps_long(right_diff_arr)+remove_timestamps_long(left_diff_arr)))):
+                            ET.SubElement(cur, "order").text = "file-list: sorted file order without long timestamps"            
+                        elif left_diff_arr_len == len(list(set(remove_timestamps_short(right_diff_arr)+remove_timestamps_short(left_diff_arr)))):
+                            ET.SubElement(cur, "order").text = "file-list: sorted file order without short timestamps"                              
                     elif this_processor == "javap -verbose -constants -s -l -private {}":
                         if left_diff_arr_len == len(list(set(remove_linenum(right_diff_arr)+remove_linenum(left_diff_arr)))):
                             ET.SubElement(cur, "order").text = "javap: sorted file order without line-nums"
