@@ -29,3 +29,7 @@ which will generate XML file, then Run:
 python3 rid.py generated_xml_file
 
 which will add the results to RID.sqlite file.
+
+# History
+
+The tool is Refactor of PHP script at old/DiffoscopeAnalyze.php which parse diffoscope TXT output that was developed by me & used to detect issues in Debian packages that was added to notes repo at: https://anonscm.debian.org/git/reproducible/notes.git/
