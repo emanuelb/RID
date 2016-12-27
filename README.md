@@ -20,6 +20,12 @@ Install Dependencies:
 
 pip3 install beautifulsoup4 sqlalchemy
 
-Run:
+Run: (currently only HTML output supported)
 
 python3 rid.py diffoscope_txt_or_html_output_file
+
+which will generate XML file, then Run:
+
+python3 rid.py generated_xml_file
+
+which will add the results to RID.sqlite file.
