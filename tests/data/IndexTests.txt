@@ -29,3 +29,14 @@ lcov_1.13-1.diffoscope.html
 lcov_1.13-1.diffoscope.txt
 
 	- Issue: timestamps only in 'file list'
+	
+gerstensaft_0.3-4.diffoscope.html
+gerstensaft_0.3-4.diffoscope.txt
+
+	- Issue: timestamps only in 'metadata' (timestamps_in_gzip_headers)
+	- Issue: build_id_differences_only
+	
+dict-bouvier_6.revised-3.3.diffoscope.html
+dict-bouvier_6.revised-3.3.diffoscope.txt
+
+	- Issue: timestamps only in 'metadata' (timestamps_in_dictionaries)

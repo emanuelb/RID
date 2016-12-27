@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="diffoscope" />
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADdgAAA3YBfdWCzAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAM8SURBVFiF7dZdaJZlGAfw3/O+e9XNjy3XllZzWImBxIpifqTgsmUHBSIeBNFBdRh0UHQ0xGdb66CFBIERZEFRQRRUw0HkQkLMYQSBdpCFWdgSP6jpNn2393k68Nn2bj3vXtb6UOh/cl/39b/u67mem/913zf/4z9GUDw5xNI8n5WIzW9m/QF2YluJmI8203mALzEvLWAerRs4Pz6vSIkZSlsYk0/GkaB0zEgyDgWMlijyWsJuS2fkQwu8pqpMTA0ypeiShG71Bp0rU8Q+A47MWEDgvHZbZl/Av4SpIgxVYB3IqwZDmoUuYkzosDaNchpAoFqkSmgjGPWzLieF1k3JHVsjvCJQHBYaSy9g1E3m+QImQiK9SbNGqJDzuiDZ0lggQJCsyelDq8BB47sbCWTsnvhG3kqcLL833eqF4hk1EOoTOjZjnnaRdq2l6KtMAyl4/g23bKJrun+Mt9uOq7nvqOVbebWYy9Adc1fM/R/3CO780dONbIeFPHsPw+ULeM5ZHTbXHfUtXpxOZzgT5z02UGsZThRzF/ilht9G+fr4zfbfccIxXIa7uVTup69i7LJXaEEqF3on1d9ludBLpVLOVoT1lky9QYtwQ6p3WAVqSyUslWwSbRrkPJrMtgn0iBVk7BPJ4sGE24EPQKW3jLgdzWKLBTbg0yTuZeGkDsp2gcUGDesHGQ/gK5G8nLMigWiCe3jCrnTRiJ9EYjm1ImsUEq5l8hScPXbpsVtlKhfan+pv0yD0ZqmU5XegGBmnDIo/pylj8oYLOP3Eab/v5Zmi6EtZ3vv1FU/2r7LioYSL2dNybbdiMdptFU57++20Vqh+iq/Tap1WpaWY611wmyWyUzxZDbIWTvEV1Ildn5agfBumoUMTtoisFvhebAAHZWxX0ChwTuScvHdVeVykToysMyJ7ittwbmj31J+6IrRDp5XTfBt1WJ+WYnZdMB0F3xlUgD5uDVj2Sa+a4SrzH+FeyHHmw17V112waBOZgP4WczkLZsILar1fpIliMU4XZoK/poE0XHl+N8v6QcGAUbVymnDIZVnzrTXqGzmnhKLxZX/niyiDjIJgwg4Se1GR/Y8idGPysh6fr0i1i/AHMWHgrwUJgNAAAAAASUVORK5CYII=" />
+  <title>/usr/bin/diffoscope --html /srv/reproducible-results/rbuild-debian-bcFxNDeg/gerstensaft_0.3-4.diffoscope.html --text /srv/reproducible-results/rbuild-debian-bcFxNDeg/gerstensaft_0.3-4.diffoscope.txt /srv/reproducible-results/rbuild-debian-bcFxNDeg/b1/gerstensaft_0.3-4_amd64.changes /srv/reproducible-results/rbuild-debian-bcFxNDeg/b2/gerstensaft_0.3-4_amd64.changes</title>
+  <style>
+    body {
+      background: white;
+      color: black;
+    }
+    .footer {
+      font-size: small;
+    }
+    .difference {
+      border: outset #888 1px;
+      background-color:rgba(0,0,0,.1);
+      padding: 0.5em;
+      margin: 0.5em 0;
+    }
+    .difference table {
+      table-layout: fixed;
+      width: 100%;
+      border: 0;
+    }
+    .difference th,
+    .difference td {
+      border: 0;
+    }
+    table.diff {
+      border: 0px;
+      border-collapse:collapse;
+      font-size:0.75em;
+      font-family: Lucida Console, monospace;
+    }
+    table.diff tr:hover td {
+      background: #FFFF00;
+    }
+    td.line {
+      color:#8080a0
+    }
+    th {
+      background: black;
+      color: white
+    }
+    tr.diffunmodified td {
+      background: #D0D0E0
+    }
+    tr.diffhunk td {
+      background: #A0A0A0
+    }
+    tr.diffadded td {
+      background: #CCFFCC
+    }
+    tr.diffdeleted td {
+      background: #FFCCCC
+    }
+    tr.diffchanged td {
+      background: #FFFFA0
+    }
+    ins, del {
+      background: #E0C880;
+      text-decoration: none
+    }
+    span.diffponct {
+      color: #B08080
+    }
+    .comment {
+      font-style: italic;
+    }
+    .source {
+      font-weight: bold;
+    }
+    .error {
+      border: solid black 1px;
+      background: red;
+      color: white;
+      padding: 0.2em;
+    }
+    .anchor {
+      margin-left: 0.5em;
+      font-size: 80%;
+      color: #333;
+      text-decoration: none;
+      display: none;
+    }
+    .diffheader:hover .anchor {
+      display: inline;
+    }
+    table.diff tr.ondemand td {
+      background: #f99;
+      text-align: center;
+      padding: 0.5em 0;
+    }
+    table.diff tr.ondemand:hover td {
+      background: #faa;
+      cursor: pointer;
+    }
+    .diffcontrol {
+      float: left;
+      margin-right: 0.3em;
+      cursor: pointer;
+      display: none; /* currently, only available in html-dir output where jquery is enabled */
+    }
+    .diffcontrol-double {
+      line-height: 200%;
+    }
+  </style>
+  
+</head>
+<body>
+
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol diffcontrol-double'>[−]</div>
+<div><span class='source'>/srv/reproducible-results/rbuild-debian-bcFxNDeg/b1/gerstensaft_0.3-4_amd64.changes</span> vs.</div>
+<div><span class='source'>/srv/reproducible-results/rbuild-debian-bcFxNDeg/b2/gerstensaft_0.3-4_amd64.changes</span>
+ <a class='anchor' href='#' name=''>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>Files<span>
+ <a class='anchor' href='#Files' name='Files'>¶</a>
+</div>
+</div>
+<table class="diff">
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 2 lines modified</td>
+<td colspan="2">Offset 1, 2 lines modified</td></tr>
+
+<tr class="diffunmodified">
+<td colspan="2"> </td>
+<td colspan="2"> </td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<del>cdca4e</del>4<del>0d803</del>c0<del>197</del>4<del>259​e91</del>c<del>ea</del>3<del>6e9c</del><span class="diffponct">·</span>​40<del>900</del><span class="diffponct">·</span>​net<span class="diffponct">·</span>​extra<span class="diffponct">·</span>​gerstensaft_0.​3-​4_amd64.​deb
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<ins>ea6823d1</ins>4<ins>b4f4a7</ins>c0<ins>8dd</ins>4​<ins>d0a5e6</ins>c<ins>5</ins>3<ins>0f</ins><span class="diffponct">·</span>​40<ins>852</ins><span class="diffponct">·</span>​net<span class="diffponct">·</span>​extra<span class="diffponct">·</span>​gerstensaft_0.​3-​4_amd64.​deb
+</td>
+</tr>
+
+</table>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>gerstensaft_0.3-4_amd64.deb<span>
+ <a class='anchor' href='#gerstensaft_0.3-4_amd64.deb' name='gerstensaft_0.3-4_amd64.deb'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>file list<span>
+ <a class='anchor' href='#gerstensaft_0.3-4_amd64.deb/file list' name='gerstensaft_0.3-4_amd64.deb/file list'>¶</a>
+</div>
+</div>
+<table class="diff">
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 3 lines modified</td>
+<td colspan="2">Offset 1, 3 lines modified</td></tr>
+
+<tr class="diffunmodified">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4<span class="diffponct">·</span>​2008-​06-​16<span class="diffponct">·</span>​09:​46:​23.​000000<span class="diffponct">·</span>​debian-​binary
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4<span class="diffponct">·</span>​2008-​06-​16<span class="diffponct">·</span>​09:​46:​23.​000000<span class="diffponct">·</span>​debian-​binary
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">2 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​636<span class="diffponct">·</span>​2008-​06-​16<span class="diffponct">·</span>​09:​46:​23.​000000<span class="diffponct">·</span>​control.​tar.​gz
+</td>
+<td class="diffline">2 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​636<span class="diffponct">·</span>​2008-​06-​16<span class="diffponct">·</span>​09:​46:​23.​000000<span class="diffponct">·</span>​control.​tar.​gz
+</td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">3 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​400<del>72</del><span class="diffponct">·</span>​2008-​06-​16<span class="diffponct">·</span>​09:​46:​23.​000000<span class="diffponct">·</span>​data.​tar.​xz
+</td>
+<td class="diffline">3 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​400<ins>24</ins><span class="diffponct">·</span>​2008-​06-​16<span class="diffponct">·</span>​09:​46:​23.​000000<span class="diffponct">·</span>​data.​tar.​xz
+</td>
+</tr>
+
+</table>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>data.tar.xz<span>
+ <a class='anchor' href='#gerstensaft_0.3-4_amd64.deb/data.tar.xz' name='gerstensaft_0.3-4_amd64.deb/data.tar.xz'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>data.tar<span>
+ <a class='anchor' href='#gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar' name='gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>./usr/bin/beer<span>
+ <a class='anchor' href='#gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar/./usr/bin/beer' name='gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar/./usr/bin/beer'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>readelf --wide --notes {}<span>
+ <a class='anchor' href='#gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar/./usr/bin/beer/readelf --wide --notes {}' name='gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar/./usr/bin/beer/readelf --wide --notes {}'>¶</a>
+</div>
+</div>
+<table class="diff">
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 3, 8 lines modified</td>
+<td colspan="2">Offset 3, 8 lines modified</td></tr>
+
+<tr class="diffunmodified">
+<td class="diffline">3 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<span class="diffponct">·</span>​Owner<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​Data<span class="diffponct">·</span>​size<span class="diffponct">»</span>   ​Description
+</td>
+<td class="diffline">3 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<span class="diffponct">·</span>​Owner<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​Data<span class="diffponct">·</span>​size<span class="diffponct">»</span>   ​Description
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">4 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<span class="diffponct">·</span>​GNU<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0x00000010<span class="diffponct">»</span>     ​NT_GNU_ABI_TAG<span class="diffponct">·</span>​(ABI<span class="diffponct">·</span>​version<span class="diffponct">·</span>​tag)​
+</td>
+<td class="diffline">4 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<span class="diffponct">·</span>​GNU<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0x00000010<span class="diffponct">»</span>     ​NT_GNU_ABI_TAG<span class="diffponct">·</span>​(ABI<span class="diffponct">·</span>​version<span class="diffponct">·</span>​tag)​
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">5 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​OS:​<span class="diffponct">·</span>​Linux,​<span class="diffponct">·</span>​ABI:​<span class="diffponct">·</span>​2.​6.​32
+</td>
+<td class="diffline">5 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​OS:​<span class="diffponct">·</span>​Linux,​<span class="diffponct">·</span>​ABI:​<span class="diffponct">·</span>​2.​6.​32
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td colspan="2"> </td>
+<td colspan="2"> </td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">6 </td>
+<td class="diffpresent">
+Displaying<span class="diffponct">·</span>​notes<span class="diffponct">·</span>​found<span class="diffponct">·</span>​in:​<span class="diffponct">·</span>​.​note.​gnu.​build-​id
+</td>
+<td class="diffline">6 </td>
+<td class="diffpresent">
+Displaying<span class="diffponct">·</span>​notes<span class="diffponct">·</span>​found<span class="diffponct">·</span>​in:​<span class="diffponct">·</span>​.​note.​gnu.​build-​id
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">7 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<span class="diffponct">·</span>​Owner<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​Data<span class="diffponct">·</span>​size<span class="diffponct">»</span>   ​Description
+</td>
+<td class="diffline">7 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<span class="diffponct">·</span>​Owner<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​Data<span class="diffponct">·</span>​size<span class="diffponct">»</span>   ​Description
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">8 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<span class="diffponct">·</span>​GNU<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0x00000014<span class="diffponct">»</span>     ​NT_GNU_BUILD_ID<span class="diffponct">·</span>​(unique<span class="diffponct">·</span>​build<span class="diffponct">·</span>​ID<span class="diffponct">·</span>​bitstring)​
+</td>
+<td class="diffline">8 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<span class="diffponct">·</span>​GNU<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0x00000014<span class="diffponct">»</span>     ​NT_GNU_BUILD_ID<span class="diffponct">·</span>​(unique<span class="diffponct">·</span>​build<span class="diffponct">·</span>​ID<span class="diffponct">·</span>​bitstring)​
+</td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">9 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​Build<span class="diffponct">·</span>​ID:​<span class="diffponct">·</span>​<del>724e259</del>8<del>e</del>6<del>34b0f</del>c<del>8d477​</del>6<del>edf89</del>9<del>6</del>2<del>0d8eade173</del>
+</td>
+<td class="diffline">9 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​Build<span class="diffponct">·</span>​ID:​<span class="diffponct">·</span>​<ins>4dab738</ins>8<ins>b4</ins>6<ins>5a348</ins>c<ins>41b0​</ins>6<ins>08bb1</ins>9<ins>5</ins>2<ins>a6ecb429b1</ins>
+</td>
+</tr>
+
+</table>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>./usr/share/doc/gerstensaft/changelog.Debian.gz<span>
+ <a class='anchor' href='#gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar/./usr/share/doc/gerstensaft/changelog.Debian.gz' name='gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar/./usr/share/doc/gerstensaft/changelog.Debian.gz'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>metadata<span>
+ <a class='anchor' href='#gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar/./usr/share/doc/gerstensaft/changelog.Debian.gz/metadata' name='gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar/./usr/share/doc/gerstensaft/changelog.Debian.gz/metadata'>¶</a>
+</div>
+</div>
+<table class="diff">
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 1 lines modified</td>
+<td colspan="2">Offset 1, 1 lines modified</td></tr>
+
+<tr class="diffchanged">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+gzip<span class="diffponct">·</span>​compressed<span class="diffponct">·</span>​data,​<span class="diffponct">·</span>​was<span class="diffponct">·</span>​&quot;changelog.​Debian&quot;,​<span class="diffponct">·</span>​last<span class="diffponct">·</span>​modified:​<span class="diffponct">·</span>​Fri<span class="diffponct">·</span>​<del>Dec</del><span class="diffponct">·</span>​<del><span class="diffponct">·</span>​9</del><span class="diffponct">·</span>​<del>19</del>:​<del>33</del>:​<del>30</del><span class="diffponct">·</span>​201<del>6</del>,​<span class="diffponct">·</span>​max<span class="diffponct">·</span>​compression,​<span class="diffponct">·</span>​from<span class="diffponct">·</span>​Unix
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+gzip<span class="diffponct">·</span>​compressed<span class="diffponct">·</span>​data,​<span class="diffponct">·</span>​was<span class="diffponct">·</span>​&quot;changelog.​Debian&quot;,​<span class="diffponct">·</span>​last<span class="diffponct">·</span>​modified:​<span class="diffponct">·</span>​Fri<span class="diffponct">·</span>​<ins>Jan</ins><span class="diffponct">·</span>​<ins>12</ins><span class="diffponct">·</span>​<ins>01</ins>:​<ins>57</ins>:​<ins>57</ins><span class="diffponct">·</span>​201<ins>8</ins>,​<span class="diffponct">·</span>​max<span class="diffponct">·</span>​compression,​<span class="diffponct">·</span>​from<span class="diffponct">·</span>​Unix
+</td>
+</tr>
+
+</table>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>./usr/share/man/man1/beer.1.gz<span>
+ <a class='anchor' href='#gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar/./usr/share/man/man1/beer.1.gz' name='gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar/./usr/share/man/man1/beer.1.gz'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>metadata<span>
+ <a class='anchor' href='#gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar/./usr/share/man/man1/beer.1.gz/metadata' name='gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar/./usr/share/man/man1/beer.1.gz/metadata'>¶</a>
+</div>
+</div>
+<table class="diff">
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 1 lines modified</td>
+<td colspan="2">Offset 1, 1 lines modified</td></tr>
+
+<tr class="diffchanged">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+gzip<span class="diffponct">·</span>​compressed<span class="diffponct">·</span>​data,​<span class="diffponct">·</span>​was<span class="diffponct">·</span>​&quot;beer.​1&quot;,​<span class="diffponct">·</span>​last<span class="diffponct">·</span>​modified:​<span class="diffponct">·</span>​Fri<span class="diffponct">·</span>​<del>Dec</del><span class="diffponct">·</span>​<del><span class="diffponct">·</span>​9</del><span class="diffponct">·</span>​<del>19</del>:​<del>33</del>:​<del>32</del><span class="diffponct">·</span>​201<del>6</del>,​<span class="diffponct">·</span>​max<span class="diffponct">·</span>​compression,​<span class="diffponct">·</span>​from<span class="diffponct">·</span>​Unix
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+gzip<span class="diffponct">·</span>​compressed<span class="diffponct">·</span>​data,​<span class="diffponct">·</span>​was<span class="diffponct">·</span>​&quot;beer.​1&quot;,​<span class="diffponct">·</span>​last<span class="diffponct">·</span>​modified:​<span class="diffponct">·</span>​Fri<span class="diffponct">·</span>​<ins>Jan</ins><span class="diffponct">·</span>​<ins>12</ins><span class="diffponct">·</span>​<ins>01</ins>:​<ins>57</ins>:​<ins>57</ins><span class="diffponct">·</span>​201<ins>8</ins>,​<span class="diffponct">·</span>​max<span class="diffponct">·</span>​compression,​<span class="diffponct">·</span>​from<span class="diffponct">·</span>​Unix
+</td>
+</tr>
+
+</table>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>./usr/share/man/ru/man1/beer.1.gz<span>
+ <a class='anchor' href='#gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar/./usr/share/man/ru/man1/beer.1.gz' name='gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar/./usr/share/man/ru/man1/beer.1.gz'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>metadata<span>
+ <a class='anchor' href='#gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar/./usr/share/man/ru/man1/beer.1.gz/metadata' name='gerstensaft_0.3-4_amd64.deb/data.tar.xz/data.tar/./usr/share/man/ru/man1/beer.1.gz/metadata'>¶</a>
+</div>
+</div>
+<table class="diff">
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 1 lines modified</td>
+<td colspan="2">Offset 1, 1 lines modified</td></tr>
+
+<tr class="diffchanged">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+gzip<span class="diffponct">·</span>​compressed<span class="diffponct">·</span>​data,​<span class="diffponct">·</span>​was<span class="diffponct">·</span>​&quot;beer.​1&quot;,​<span class="diffponct">·</span>​last<span class="diffponct">·</span>​modified:​<span class="diffponct">·</span>​Fri<span class="diffponct">·</span>​<del>Dec</del><span class="diffponct">·</span>​<del><span class="diffponct">·</span>​9</del><span class="diffponct">·</span>​<del>19</del>:​<del>33</del>:​<del>33</del><span class="diffponct">·</span>​201<del>6</del>,​<span class="diffponct">·</span>​max<span class="diffponct">·</span>​compression,​<span class="diffponct">·</span>​from<span class="diffponct">·</span>​Unix
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+gzip<span class="diffponct">·</span>​compressed<span class="diffponct">·</span>​data,​<span class="diffponct">·</span>​was<span class="diffponct">·</span>​&quot;beer.​1&quot;,​<span class="diffponct">·</span>​last<span class="diffponct">·</span>​modified:​<span class="diffponct">·</span>​Fri<span class="diffponct">·</span>​<ins>Jan</ins><span class="diffponct">·</span>​<ins>12</ins><span class="diffponct">·</span>​<ins>01</ins>:​<ins>57</ins>:​<ins>57</ins><span class="diffponct">·</span>​201<ins>8</ins>,​<span class="diffponct">·</span>​max<span class="diffponct">·</span>​compression,​<span class="diffponct">·</span>​from<span class="diffponct">·</span>​Unix
+</td>
+</tr>
+
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer">Generated by <a href="https://diffoscope.org" target="_blank">diffoscope</a> 63</div>
+</body>
+</html>
+

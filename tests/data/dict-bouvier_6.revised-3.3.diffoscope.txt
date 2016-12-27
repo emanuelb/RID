@@ -1,0 +1,28 @@
+--- /srv/reproducible-results/rbuild-debian-mocq1oC9/b1/dict-bouvier_6.revised-3.3_amd64.changes
++++ /srv/reproducible-results/rbuild-debian-mocq1oC9/b2/dict-bouvier_6.revised-3.3_amd64.changes
+├── Files
+│ @@ -1,2 +1,2 @@
+│  
+│ - 17298def62f31507244bdd0af60ac5bb 2453922 text optional dict-bouvier_6.revised-3.3_all.deb
+│ + ef0a3aa7a174870eb5cafc27e7afa059 2453922 text optional dict-bouvier_6.revised-3.3_all.deb
+├── dict-bouvier_6.revised-3.3_all.deb
+│   ├── control.tar.gz
+│   │   ├── control.tar
+│   │   │   ├── ./md5sums
+│   │   │   │   ├── md5sums
+│   │   │   │   │┄ Files in package differ
+│   │   │   │   ╵
+│   │   │   ╵
+│   │   ╵
+│   ├── data.tar.xz
+│   │   ├── data.tar
+│   │   │   ├── ./usr/share/dictd/bouvier.dict.dz
+│   │   │   │   ├── metadata
+│   │   │   │   │ @@ -1 +1 @@
+│   │   │   │   │ -gzip compressed data, extra field, last modified: Sun Jan 28 20:54:36 2018, max compression, from Unix
+│   │   │   │   │ +gzip compressed data, extra field, last modified: Mon Dec 26 14:32:18 2016, max compression, from Unix
+│   │   │   │   ╵
+│   │   │   ╵
+│   │   ╵
+│   ╵
+╵
