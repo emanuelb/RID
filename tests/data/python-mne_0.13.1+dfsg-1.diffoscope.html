@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="diffoscope" />
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADdgAAA3YBfdWCzAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAM8SURBVFiF7dZdaJZlGAfw3/O+e9XNjy3XllZzWImBxIpifqTgsmUHBSIeBNFBdRh0UHQ0xGdb66CFBIERZEFRQRRUw0HkQkLMYQSBdpCFWdgSP6jpNn2393k68Nn2bj3vXtb6UOh/cl/39b/u67mem/913zf/4z9GUDw5xNI8n5WIzW9m/QF2YluJmI8203mALzEvLWAerRs4Pz6vSIkZSlsYk0/GkaB0zEgyDgWMlijyWsJuS2fkQwu8pqpMTA0ypeiShG71Bp0rU8Q+A47MWEDgvHZbZl/Av4SpIgxVYB3IqwZDmoUuYkzosDaNchpAoFqkSmgjGPWzLieF1k3JHVsjvCJQHBYaSy9g1E3m+QImQiK9SbNGqJDzuiDZ0lggQJCsyelDq8BB47sbCWTsnvhG3kqcLL833eqF4hk1EOoTOjZjnnaRdq2l6KtMAyl4/g23bKJrun+Mt9uOq7nvqOVbebWYy9Adc1fM/R/3CO780dONbIeFPHsPw+ULeM5ZHTbXHfUtXpxOZzgT5z02UGsZThRzF/ilht9G+fr4zfbfccIxXIa7uVTup69i7LJXaEEqF3on1d9ludBLpVLOVoT1lky9QYtwQ6p3WAVqSyUslWwSbRrkPJrMtgn0iBVk7BPJ4sGE24EPQKW3jLgdzWKLBTbg0yTuZeGkDsp2gcUGDesHGQ/gK5G8nLMigWiCe3jCrnTRiJ9EYjm1ImsUEq5l8hScPXbpsVtlKhfan+pv0yD0ZqmU5XegGBmnDIo/pylj8oYLOP3Eab/v5Zmi6EtZ3vv1FU/2r7LioYSL2dNybbdiMdptFU57++20Vqh+iq/Tap1WpaWY611wmyWyUzxZDbIWTvEV1Ildn5agfBumoUMTtoisFvhebAAHZWxX0ChwTuScvHdVeVykToysMyJ7ittwbmj31J+6IrRDp5XTfBt1WJ+WYnZdMB0F3xlUgD5uDVj2Sa+a4SrzH+FeyHHmw17V112waBOZgP4WczkLZsILar1fpIliMU4XZoK/poE0XHl+N8v6QcGAUbVymnDIZVnzrTXqGzmnhKLxZX/niyiDjIJgwg4Se1GR/Y8idGPysh6fr0i1i/AHMWHgrwUJgNAAAAAASUVORK5CYII=" />
+  <title>/usr/bin/diffoscope --html /srv/reproducible-results/rbuild-debian-1ty0l8xr/python-mne_0.13.1+dfsg-1.diffoscope.html --text /srv/reproducible-results/rbuild-debian-1ty0l8xr/python-mne_0.13.1+dfsg-1.diffoscope.txt /srv/reproducible-results/rbuild-debian-1ty0l8xr/b1/python-mne_0.13.1+dfsg-1_amd64.changes /srv/reproducible-results/rbuild-debian-1ty0l8xr/b2/python-mne_0.13.1+dfsg-1_amd64.changes</title>
+  <style>
+    body {
+      background: white;
+      color: black;
+    }
+    .footer {
+      font-size: small;
+    }
+    .difference {
+      border: outset #888 1px;
+      background-color:rgba(0,0,0,.1);
+      padding: 0.5em;
+      margin: 0.5em 0;
+    }
+    .difference table {
+      table-layout: fixed;
+      width: 100%;
+      border: 0;
+    }
+    .difference th,
+    .difference td {
+      border: 0;
+    }
+    table.diff {
+      border: 0px;
+      border-collapse:collapse;
+      font-size:0.75em;
+      font-family: Lucida Console, monospace;
+    }
+    table.diff tr:hover td {
+      background: #FFFF00;
+    }
+    td.line {
+      color:#8080a0
+    }
+    th {
+      background: black;
+      color: white
+    }
+    tr.diffunmodified td {
+      background: #D0D0E0
+    }
+    tr.diffhunk td {
+      background: #A0A0A0
+    }
+    tr.diffadded td {
+      background: #CCFFCC
+    }
+    tr.diffdeleted td {
+      background: #FFCCCC
+    }
+    tr.diffchanged td {
+      background: #FFFFA0
+    }
+    ins, del {
+      background: #E0C880;
+      text-decoration: none
+    }
+    span.diffponct {
+      color: #B08080
+    }
+    .comment {
+      font-style: italic;
+    }
+    .source {
+      font-weight: bold;
+    }
+    .error {
+      border: solid black 1px;
+      background: red;
+      color: white;
+      padding: 0.2em;
+    }
+    .anchor {
+      margin-left: 0.5em;
+      font-size: 80%;
+      color: #333;
+      text-decoration: none;
+      display: none;
+    }
+    .diffheader:hover .anchor {
+      display: inline;
+    }
+    table.diff tr.ondemand td {
+      background: #f99;
+      text-align: center;
+      padding: 0.5em 0;
+    }
+    table.diff tr.ondemand:hover td {
+      background: #faa;
+      cursor: pointer;
+    }
+    .diffcontrol {
+      float: left;
+      margin-right: 0.3em;
+      cursor: pointer;
+      display: none; /* currently, only available in html-dir output where jquery is enabled */
+    }
+    .diffcontrol-double {
+      line-height: 200%;
+    }
+  </style>
+  
+</head>
+<body>
+
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol diffcontrol-double'>[−]</div>
+<div><span class='source'>/srv/reproducible-results/rbuild-debian-1ty0l8xr/b1/python-mne_0.13.1+dfsg-1_amd64.changes</span> vs.</div>
+<div><span class='source'>/srv/reproducible-results/rbuild-debian-1ty0l8xr/b2/python-mne_0.13.1+dfsg-1_amd64.changes</span>
+ <a class='anchor' href='#' name=''>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>Files<span>
+ <a class='anchor' href='#Files' name='Files'>¶</a>
+</div>
+</div>
+<table class="diff">
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 2 lines modified</td>
+<td colspan="2">Offset 1, 2 lines modified</td></tr>
+
+<tr class="diffunmodified">
+<td colspan="2"> </td>
+<td colspan="2"> </td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<del>c2b1d3b56</del>13<del>1b</del>b<del>5</del>4<del>5833</del>c​<del>ae41</del>2<del>cbac43</del><span class="diffponct">·</span>​450612<del>8</del><span class="diffponct">·</span>​python<span class="diffponct">·</span>​optional<span class="diffponct">·</span>​python-​mne_0.​13.​1+dfsg-​1_all.​deb
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<ins>e49a80eb</ins>13<ins>d</ins>b<ins>7</ins>4<ins>1a46</ins>c<ins>19​3af</ins>2<ins>f900082</ins><span class="diffponct">·</span>​450612<ins>0</ins><span class="diffponct">·</span>​python<span class="diffponct">·</span>​optional<span class="diffponct">·</span>​python-​mne_0.​13.​1+dfsg-​1_all.​deb
+</td>
+</tr>
+
+</table>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>python-mne_0.13.1+dfsg-1_all.deb<span>
+ <a class='anchor' href='#python-mne_0.13.1+dfsg-1_all.deb' name='python-mne_0.13.1+dfsg-1_all.deb'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>file list<span>
+ <a class='anchor' href='#python-mne_0.13.1+dfsg-1_all.deb/file list' name='python-mne_0.13.1+dfsg-1_all.deb/file list'>¶</a>
+</div>
+</div>
+<table class="diff">
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 3 lines modified</td>
+<td colspan="2">Offset 1, 3 lines modified</td></tr>
+
+<tr class="diffunmodified">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4<span class="diffponct">·</span>​2016-​11-​22<span class="diffponct">·</span>​03:​33:​19.​000000<span class="diffponct">·</span>​debian-​binary
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4<span class="diffponct">·</span>​2016-​11-​22<span class="diffponct">·</span>​03:​33:​19.​000000<span class="diffponct">·</span>​debian-​binary
+</td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">2 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​1350<del>8</del><span class="diffponct">·</span>​2016-​11-​22<span class="diffponct">·</span>​03:​33:​19.​000000<span class="diffponct">·</span>​control.​tar.​gz
+</td>
+<td class="diffline">2 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​1350<ins>7</ins><span class="diffponct">·</span>​2016-​11-​22<span class="diffponct">·</span>​03:​33:​19.​000000<span class="diffponct">·</span>​control.​tar.​gz
+</td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">3 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​449242<del>8</del><span class="diffponct">·</span>​2016-​11-​22<span class="diffponct">·</span>​03:​33:​19.​000000<span class="diffponct">·</span>​data.​tar.​xz
+</td>
+<td class="diffline">3 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​449242<ins>0</ins><span class="diffponct">·</span>​2016-​11-​22<span class="diffponct">·</span>​03:​33:​19.​000000<span class="diffponct">·</span>​data.​tar.​xz
+</td>
+</tr>
+
+</table>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>control.tar.gz<span>
+ <a class='anchor' href='#python-mne_0.13.1+dfsg-1_all.deb/control.tar.gz' name='python-mne_0.13.1+dfsg-1_all.deb/control.tar.gz'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>control.tar<span>
+ <a class='anchor' href='#python-mne_0.13.1+dfsg-1_all.deb/control.tar.gz/control.tar' name='python-mne_0.13.1+dfsg-1_all.deb/control.tar.gz/control.tar'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>./md5sums<span>
+ <a class='anchor' href='#python-mne_0.13.1+dfsg-1_all.deb/control.tar.gz/control.tar/./md5sums' name='python-mne_0.13.1+dfsg-1_all.deb/control.tar.gz/control.tar/./md5sums'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>md5sums<span>
+ <a class='anchor' href='#python-mne_0.13.1+dfsg-1_all.deb/control.tar.gz/control.tar/./md5sums/md5sums' name='python-mne_0.13.1+dfsg-1_all.deb/control.tar.gz/control.tar/./md5sums/md5sums'>¶</a>
+</div>
+<div class='comment'>Files in package differ</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>data.tar.xz<span>
+ <a class='anchor' href='#python-mne_0.13.1+dfsg-1_all.deb/data.tar.xz' name='python-mne_0.13.1+dfsg-1_all.deb/data.tar.xz'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>data.tar<span>
+ <a class='anchor' href='#python-mne_0.13.1+dfsg-1_all.deb/data.tar.xz/data.tar' name='python-mne_0.13.1+dfsg-1_all.deb/data.tar.xz/data.tar'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>file list<span>
+ <a class='anchor' href='#python-mne_0.13.1+dfsg-1_all.deb/data.tar.xz/data.tar/file list' name='python-mne_0.13.1+dfsg-1_all.deb/data.tar.xz/data.tar/file list'>¶</a>
+</div>
+</div>
+<table class="diff">
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 260, 15 lines modified</td>
+<td colspan="2">Offset 260, 15 lines modified</td></tr>
+
+<tr class="diffunmodified">
+<td class="diffline">260 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​7866<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​gui/​tests/​test_coreg_gui.​py
+</td>
+<td class="diffline">260 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​7866<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​gui/​tests/​test_coreg_gui.​py
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">261 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​2171<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​gui/​tests/​test_fiducials_gui.​py
+</td>
+<td class="diffline">261 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​2171<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​gui/​tests/​test_fiducials_gui.​py
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">262 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​3042<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​gui/​tests/​test_file_traits.​py
+</td>
+<td class="diffline">262 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​3042<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​gui/​tests/​test_file_traits.​py
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">263 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4236<span class="diffponct">·</span>​2016-​11-​22<span class="diffponct">·</span>​03:​33:​19.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​gui/​tests/​test_kit2fiff_gui.​py
+</td>
+<td class="diffline">263 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4236<span class="diffponct">·</span>​2016-​11-​22<span class="diffponct">·</span>​03:​33:​19.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​gui/​tests/​test_kit2fiff_gui.​py
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">264 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​2559<span class="diffponct">·</span>​2016-​11-​22<span class="diffponct">·</span>​03:​33:​19.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​gui/​tests/​test_marker_gui.​py
+</td>
+<td class="diffline">264 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​2559<span class="diffponct">·</span>​2016-​11-​22<span class="diffponct">·</span>​03:​33:​19.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​gui/​tests/​test_marker_gui.​py
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">265 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​11-​22<span class="diffponct">·</span>​03:​33:​19.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​html/​
+</td>
+<td class="diffline">265 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​11-​22<span class="diffponct">·</span>​03:​33:​19.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​html/​
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">266 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​99548<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​html/​bootstrap.​min.​css
+</td>
+<td class="diffline">266 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​99548<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​html/​bootstrap.​min.​css
+</td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">267 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​3004<del>9</del><span class="diffponct">·</span>​2016-​11-​22<span class="diffponct">·</span>​03:​33:​19.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​html/​bootstrap.​min.​js
+</td>
+<td class="diffline">267 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​3004<ins>6</ins><span class="diffponct">·</span>​2016-​11-​22<span class="diffponct">·</span>​03:​33:​19.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​html/​bootstrap.​min.​js
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">268 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​26783<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​html/​jquery-​ui.​min.​css
+</td>
+<td class="diffline">268 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​26783<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​html/​jquery-​ui.​min.​css
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">269 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​11-​22<span class="diffponct">·</span>​03:​33:​19.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​inverse_sparse/​
+</td>
+<td class="diffline">269 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​11-​22<span class="diffponct">·</span>​03:​33:​19.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​inverse_sparse/​
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">270 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​227<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​inverse_sparse/​__init__.​py
+</td>
+<td class="diffline">270 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​227<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​inverse_sparse/​__init__.​py
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">271 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​10653<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​inverse_sparse/​_gamma_map.​py
+</td>
+<td class="diffline">271 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​10653<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​inverse_sparse/​_gamma_map.​py
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">272 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​3701<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​inverse_sparse/​mxne_debiasing.​py
+</td>
+<td class="diffline">272 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​3701<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​inverse_sparse/​mxne_debiasing.​py
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">273 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​19154<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​inverse_sparse/​mxne_inverse.​py
+</td>
+<td class="diffline">273 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​19154<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​inverse_sparse/​mxne_inverse.​py
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">274 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​36918<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​inverse_sparse/​mxne_optim.​py
+</td>
+<td class="diffline">274 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​36918<span class="diffponct">·</span>​2016-​11-​21<span class="diffponct">·</span>​07:​49:​17.​000000<span class="diffponct">·</span>​.​/​usr/​lib/​python2.​7/​dist-​packages/​mne/​inverse_sparse/​mxne_optim.​py
+</td>
+</tr>
+
+</table>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div class='diffcontrol'>[−]</div>
+<div><span class='source'>./usr/lib/python2.7/dist-packages/mne/html/bootstrap.min.js<span>
+ <a class='anchor' href='#python-mne_0.13.1+dfsg-1_all.deb/data.tar.xz/data.tar/./usr/lib/python2.7/dist-packages/mne/html/bootstrap.min.js' name='python-mne_0.13.1+dfsg-1_all.deb/data.tar.xz/data.tar/./usr/lib/python2.7/dist-packages/mne/html/bootstrap.min.js'>¶</a>
+</div>
+</div>
+<table class="diff">
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 7 lines modified</td>
+<td colspan="2">Offset 1, 7 lines modified</td></tr>
+
+<tr class="diffunmodified">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+/​*
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+/​*
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">2 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​*<span class="diffponct">·</span>​Bootstrap<span class="diffponct">·</span>​v3.​1.​1<span class="diffponct">·</span>​(http:​/​/​getbootstrap.​com)​
+</td>
+<td class="diffline">2 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​*<span class="diffponct">·</span>​Bootstrap<span class="diffponct">·</span>​v3.​1.​1<span class="diffponct">·</span>​(http:​/​/​getbootstrap.​com)​
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">3 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​*<span class="diffponct">·</span>​Copyright<span class="diffponct">·</span>​2011-​2014<span class="diffponct">·</span>​Twitter,​<span class="diffponct">·</span>​Inc.​
+</td>
+<td class="diffline">3 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​*<span class="diffponct">·</span>​Copyright<span class="diffponct">·</span>​2011-​2014<span class="diffponct">·</span>​Twitter,​<span class="diffponct">·</span>​Inc.​
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">4 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​*<span class="diffponct">·</span>​Licensed<span class="diffponct">·</span>​under<span class="diffponct">·</span>​MIT<span class="diffponct">·</span>​(https:​/​/​github.​com/​twbs/​bootstrap/​blob/​master/​LICENSE)​
+</td>
+<td class="diffline">4 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​*<span class="diffponct">·</span>​Licensed<span class="diffponct">·</span>​under<span class="diffponct">·</span>​MIT<span class="diffponct">·</span>​(https:​/​/​github.​com/​twbs/​bootstrap/​blob/​master/​LICENSE)​
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">5 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​*/​
+</td>
+<td class="diffline">5 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​*/​
+</td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">6 </td>
+<td class="diffpresent">
+if(typeof<span class="diffponct">·</span>​jQuery===&quot;undefined&quot;)​{throw<span class="diffponct">·</span>​new<span class="diffponct">·</span>​Error(&quot;Bootstrap&#x27;s<span class="diffponct">·</span>​JavaScript<span class="diffponct">·</span>​requires<span class="diffponct">·</span>​jQuery&quot;)​}+function(b)​{function<span class="diffponct">·</span>​a()​{var<span class="diffponct">·</span>​e=document.​createElement(&quot;bootst​rap&quot;)​;​var<span class="diffponct">·</span>​d={WebkitTransition:​&quot;webkitTransitionEnd&quot;​,​MozTransition:​&quot;transitionend&quot;,​OTransition:​&quot;oTransitionEnd<span class="diffponct">·</span>​otransitionend&quot;,​transition:​&quot;transitionend&quot;};​for(var<span class="diffponct">·</span>​c<span class="diffponct">·</span>​in<span class="diffponct">·</span>​d)​{if(e.​style[c]!==undefined)​{return{end:​d[c]}}}return<span class="diffponct">·</span>​false}b.​fn.​emulateTransitionEnd=​function(e)​{var<span class="diffponct">·</span>​d=false,​c=this;​b(this)​.​one(b.​support.​transition.​end,​function()​{d=true})​;​var<span class="diffponct">·</span>​f=function()​{if(!d)​{b(c)​.​trigger(b.​support.​transition.​end)​}};​setTimeout(f,​e)​;​return<span class="diffponct">·</span>​this};​b(function()​{b.​support.​transition=a()​})​}(jQuery)​;​+function(d)​{var<span class="diffponct">·</span>​c=&#x27;[data-​dismiss=&quot;alert&quot;]&#x27;;​var<span class="diffponct">·</span>​b=function(e)​{d(e)​.​on(&quot;click&quot;,​c,​this.​close)​};​b.​prototype.​close=function(j)​{var<span class="diffponct">·</span>​i=d(this)​;​var<span class="diffponct">·</span>​g=i.​attr(&quot;data-​target&quot;)​;​if(!g)​{g=i.​attr(&quot;href&quot;)​;​g=g&amp;&amp;g.​replace(/​.​*(?=#[^\s]*$)​/​,​&quot;&quot;)​}var<span class="diffponct">·</span>​h=d(g)​;​if(j)​{j.​preventDefault()​}if(!h.​length)​{h=i.​hasClass(&quot;alert&quot;)​?i:​i.​parent()​}h.​trigger(j=d.​Event(&quot;close.​bs.​alert&quot;)​)​;​if(j.​isDefaultPrevented()​)​{return}h.​re<span class="diffponct">·</span>​✂
+</td>
+<td class="diffline">6 </td>
+<td class="diffpresent">
+if(typeof<span class="diffponct">·</span>​jQuery===&quot;undefined&quot;)​{throw<span class="diffponct">·</span>​new<span class="diffponct">·</span>​Error(&quot;Bootstrap&#x27;s<span class="diffponct">·</span>​JavaScript<span class="diffponct">·</span>​requires<span class="diffponct">·</span>​jQuery&quot;)​}+function(b)​{function<span class="diffponct">·</span>​a()​{var<span class="diffponct">·</span>​e=document.​createElement(&quot;bootst​rap&quot;)​;​var<span class="diffponct">·</span>​d={WebkitTransition:​&quot;webkitTransitionEnd&quot;​,​MozTransition:​&quot;transitionend&quot;,​OTransition:​&quot;oTransitionEnd<span class="diffponct">·</span>​otransitionend&quot;,​transition:​&quot;transitionend&quot;};​for(var<span class="diffponct">·</span>​c<span class="diffponct">·</span>​in<span class="diffponct">·</span>​d)​{if(e.​style[c]!==undefined)​{return{end:​d[c]}}}return<span class="diffponct">·</span>​false}b.​fn.​emulateTransitionEnd=​function(e)​{var<span class="diffponct">·</span>​d=false,​c=this;​b(this)​.​one(b.​support.​transition.​end,​function()​{d=true})​;​var<span class="diffponct">·</span>​f=function()​{if(!d)​{b(c)​.​trigger(b.​support.​transition.​end)​}};​setTimeout(f,​e)​;​return<span class="diffponct">·</span>​this};​b(function()​{b.​support.​transition=a()​})​}(jQuery)​;​+function(d)​{var<span class="diffponct">·</span>​c=&#x27;[data-​dismiss=&quot;alert&quot;]&#x27;;​var<span class="diffponct">·</span>​b=function(e)​{d(e)​.​on(&quot;click&quot;,​c,​this.​close)​};​b.​prototype.​close=function(j)​{var<span class="diffponct">·</span>​i=d(this)​;​var<span class="diffponct">·</span>​g=i.​attr(&quot;data-​target&quot;)​;​if(!g)​{g=i.​attr(&quot;href&quot;)​;​g=g&amp;&amp;g.​replace(/​.​*(?=#[^\s]*$)​/​,​&quot;&quot;)​}var<span class="diffponct">·</span>​h=d(g)​;​if(j)​{j.​preventDefault()​}if(!h.​length)​{h=i.​hasClass(&quot;alert&quot;)​?i:​i.​parent()​}h.​trigger(j=d.​Event(&quot;close.​bs.​alert&quot;)​)​;​if(j.​isDefaultPrevented()​)​{return}h.​re<span class="diffponct">·</span>​✂
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td colspan="2"> </td>
+<td colspan="2"> </td>
+</tr>
+
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer">Generated by <a href="https://diffoscope.org" target="_blank">diffoscope</a> 63</div>
+</body>
+</html>
+

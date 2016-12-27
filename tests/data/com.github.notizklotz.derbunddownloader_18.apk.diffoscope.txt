@@ -1,0 +1,464 @@
+--- /code/fdroid/data/unsigned/com.github.notizklotz.derbunddownloader_18.apk
++++ /code/fdroid/data/tmp/com.github.notizklotz.derbunddownloader_18.apk
+├── zipinfo {}
+│ @@ -1,8 +1,15 @@
+│ -Zip file size: 2228005 bytes, number of entries: 864
+│ +Zip file size: 2285676 bytes, number of entries: 869
+│ +-rw----     2.0 fat    79118 bl defN 08-Jan-01 00:00 META-INF/MANIFEST.MF
+│ +-rw----     2.0 fat    79239 bl defN 08-Jan-01 00:00 META-INF/39C706F5.SF
+│ +-rw----     2.0 fat     1326 bl defN 08-Jan-01 00:00 META-INF/39C706F5.RSA
+│ +-rw----     2.0 fat    11560 bl defN 08-Jan-01 00:00 META-INF/LICENSE.txt
+│ +-rw----     2.0 fat      316 bl defN 08-Jan-01 00:00 META-INF/NOTICE.txt
+│ +-rw----     2.0 fat       41 bl defN 08-Jan-01 00:00 META-INF/buildserverid
+│ +-rw----     2.0 fat       41 bl defN 08-Jan-01 00:00 META-INF/fdroidserverid
+│  -rw----     2.0 fat     5536 bX defN 08-Jan-01 00:00 AndroidManifest.xml
+│  -rw----     2.0 fat      396 bl defN 08-Jan-01 00:00 res/anim/abc_fade_in.xml
+│  -rw----     2.0 fat      396 bl defN 08-Jan-01 00:00 res/anim/abc_fade_out.xml
+│  -rw----     2.0 fat      860 bl defN 08-Jan-01 00:00 res/anim/abc_grow_fade_in_from_bottom.xml
+│  -rw----     2.0 fat      512 bl defN 08-Jan-01 00:00 res/anim/abc_popup_enter.xml
+│  -rw----     2.0 fat      512 bl defN 08-Jan-01 00:00 res/anim/abc_popup_exit.xml
+│  -rw----     2.0 fat      860 bl defN 08-Jan-01 00:00 res/anim/abc_shrink_fade_out_from_bottom.xml
+│ @@ -842,25 +849,23 @@
+│  -rw----     2.0 fat       46 bl defN 08-Jan-01 00:00 res/raw/joda_pacific_wallis
+│  -rw----     2.0 fat      688 bl defN 08-Jan-01 00:00 res/raw/joda_pst8pdt
+│  -rw----     2.0 fat      337 bl defN 08-Jan-01 00:00 res/raw/joda_wet
+│  -rw----     2.0 fat    11829 bl defN 08-Jan-01 00:00 res/raw/joda_zoneinfomap
+│  -rw----     2.0 fat      340 bl defN 08-Jan-01 00:00 res/xml/backupscheme.xml
+│  -rw----     2.0 fat     2124 bl defN 08-Jan-01 00:00 res/xml/preferences.xml
+│  -rw----     1.0 fat   382096 b- stor 08-Jan-01 00:00 resources.arsc
+│ --rw----     2.0 fat  4173180 bl defN 08-Jan-01 00:00 classes.dex
+│ --rw----     2.0 fat    11560 bl defN 08-Jan-01 00:00 META-INF/LICENSE.txt
+│ --rw----     2.0 fat      316 bl defN 08-Jan-01 00:00 META-INF/NOTICE.txt
+│ +-rw----     2.0 fat  4173164 bl defN 08-Jan-01 00:00 classes.dex
+│  -rw----     2.0 fat      650 bl defN 08-Jan-01 00:00 org/joda/time/format/messages.properties
+│  -rw----     2.0 fat     1091 bl defN 08-Jan-01 00:00 org/joda/time/format/messages_cs.properties
+│  -rw----     2.0 fat      663 bl defN 08-Jan-01 00:00 org/joda/time/format/messages_da.properties
+│  -rw----     2.0 fat      660 bl defN 08-Jan-01 00:00 org/joda/time/format/messages_de.properties
+│  -rw----     2.0 fat        0 bl defN 08-Jan-01 00:00 org/joda/time/format/messages_en.properties
+│  -rw----     2.0 fat      665 bl defN 08-Jan-01 00:00 org/joda/time/format/messages_es.properties
+│  -rw----     2.0 fat      670 bl defN 08-Jan-01 00:00 org/joda/time/format/messages_fr.properties
+│  -rw----     2.0 fat      650 bl defN 08-Jan-01 00:00 org/joda/time/format/messages_it.properties
+│  -rw----     2.0 fat      658 bl defN 08-Jan-01 00:00 org/joda/time/format/messages_ja.properties
+│  -rw----     2.0 fat      649 bl defN 08-Jan-01 00:00 org/joda/time/format/messages_nl.properties
+│  -rw----     2.0 fat     1172 bl defN 08-Jan-01 00:00 org/joda/time/format/messages_pl.properties
+│  -rw----     2.0 fat      652 bl defN 08-Jan-01 00:00 org/joda/time/format/messages_pt.properties
+│  -rw----     2.0 fat     1815 bl defN 08-Jan-01 00:00 org/joda/time/format/messages_ru.properties
+│  -rw----     2.0 fat      639 bl defN 08-Jan-01 00:00 androidannotations-api.properties
+│ -864 files, 5096689 bytes uncompressed, 2086799 bytes compressed:  59.1%
+│ +869 files, 5256438 bytes uncompressed, 2143381 bytes compressed:  59.2%
+├── classes.dex
+│   ├── classes.jar
+│   │   ├── zipinfo -v {}
+│   │   │ @@ -56095,15 +56095,15 @@
+│   │   │    version of encoding software:                   2.0
+│   │   │    minimum file system compatibility required:     MS-DOS, OS/2 or NT FAT
+│   │   │    minimum software version required to extract:   2.0
+│   │   │    compression method:                             none (stored)
+│   │   │    file security status:                           not encrypted
+│   │   │    extended local header:                          no
+│   │   │    file last modified on (DOS date/time):          1980 Jan 1 00:00:00
+│   │   │ -  32-bit CRC value (hex):                         511aedd9
+│   │   │ +  32-bit CRC value (hex):                         1fd9fe91
+│   │   │    compressed size:                                1179 bytes
+│   │   │    uncompressed size:                              1179 bytes
+│   │   │    length of filename:                             82 characters
+│   │   │    length of extra field:                          0 bytes
+│   │   │    length of file comment:                         0 characters
+│   │   │    disk number on which file begins:               disk 1
+│   │   │    apparent file type:                             binary
+│   │   │ @@ -56179,15 +56179,15 @@
+│   │   │    version of encoding software:                   2.0
+│   │   │    minimum file system compatibility required:     MS-DOS, OS/2 or NT FAT
+│   │   │    minimum software version required to extract:   2.0
+│   │   │    compression method:                             none (stored)
+│   │   │    file security status:                           not encrypted
+│   │   │    extended local header:                          no
+│   │   │    file last modified on (DOS date/time):          1980 Jan 1 00:00:00
+│   │   │ -  32-bit CRC value (hex):                         9f6b3923
+│   │   │ +  32-bit CRC value (hex):                         86baa857
+│   │   │    compressed size:                                2730 bytes
+│   │   │    uncompressed size:                              2730 bytes
+│   │   │    length of filename:                             76 characters
+│   │   │    length of extra field:                          0 bytes
+│   │   │    length of file comment:                         0 characters
+│   │   │    disk number on which file begins:               disk 1
+│   │   │    apparent file type:                             binary
+│   │   │ @@ -63689,15 +63689,15 @@
+│   │   │    version of encoding software:                   2.0
+│   │   │    minimum file system compatibility required:     MS-DOS, OS/2 or NT FAT
+│   │   │    minimum software version required to extract:   2.0
+│   │   │    compression method:                             none (stored)
+│   │   │    file security status:                           not encrypted
+│   │   │    extended local header:                          no
+│   │   │    file last modified on (DOS date/time):          1980 Jan 1 00:00:00
+│   │   │ -  32-bit CRC value (hex):                         3b0ae1e7
+│   │   │ +  32-bit CRC value (hex):                         e03a5480
+│   │   │    compressed size:                                1426 bytes
+│   │   │    uncompressed size:                              1426 bytes
+│   │   │    length of filename:                             81 characters
+│   │   │    length of extra field:                          0 bytes
+│   │   │    length of file comment:                         0 characters
+│   │   │    disk number on which file begins:               disk 1
+│   │   │    apparent file type:                             binary
+│   │   │ @@ -69860,15 +69860,15 @@
+│   │   │    version of encoding software:                   2.0
+│   │   │    minimum file system compatibility required:     MS-DOS, OS/2 or NT FAT
+│   │   │    minimum software version required to extract:   2.0
+│   │   │    compression method:                             none (stored)
+│   │   │    file security status:                           not encrypted
+│   │   │    extended local header:                          no
+│   │   │    file last modified on (DOS date/time):          1980 Jan 1 00:00:00
+│   │   │ -  32-bit CRC value (hex):                         4e74ec52
+│   │   │ +  32-bit CRC value (hex):                         b580972d
+│   │   │    compressed size:                                4254 bytes
+│   │   │    uncompressed size:                              4254 bytes
+│   │   │    length of filename:                             82 characters
+│   │   │    length of extra field:                          0 bytes
+│   │   │    length of file comment:                         0 characters
+│   │   │    disk number on which file begins:               disk 1
+│   │   │    apparent file type:                             binary
+│   │   ├── com/github/notizklotz/derbunddownloader/download/AutomaticDownloadScheduler_.class
+│   │   │   ├── javap -verbose -constants -s -l -private {}
+│   │   │   │ @@ -17,33 +17,33 @@
+│   │   │   │    #12 = Fieldref           #2.#11         // com/github/notizklotz/derbunddownloader/download/AutomaticDownloadScheduler_.context_:Landroid/content/Context;
+│   │   │   │    #13 = Utf8               init_
+│   │   │   │    #14 = NameAndType        #13:#8         // init_:()V
+│   │   │   │    #15 = Methodref          #2.#14         // com/github/notizklotz/derbunddownloader/download/AutomaticDownloadScheduler_.init_:()V
+│   │   │   │    #16 = Utf8               (Landroid/content/Context;)V
+│   │   │   │    #17 = NameAndType        #7:#16         // "<init>":(Landroid/content/Context;)V
+│   │   │   │    #18 = Methodref          #2.#17         // com/github/notizklotz/derbunddownloader/download/AutomaticDownloadScheduler_."<init>":(Landroid/content/Context;)V
+│   │   │   │ -  #19 = Utf8               com/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_
+│   │   │   │ -  #20 = Class              #19            // com/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_
+│   │   │   │ +  #19 = Utf8               com/github/notizklotz/derbunddownloader/settings/SettingsImpl_
+│   │   │   │ +  #20 = Class              #19            // com/github/notizklotz/derbunddownloader/settings/SettingsImpl_
+│   │   │   │    #21 = Utf8               getInstance_
+│   │   │   │ -  #22 = Utf8               (Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_;
+│   │   │   │ -  #23 = NameAndType        #21:#22        // getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_;
+│   │   │   │ -  #24 = Methodref          #20.#23        // com/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_;
+│   │   │   │ -  #25 = Utf8               alarmScheduler
+│   │   │   │ -  #26 = Utf8               Lcom/github/notizklotz/derbunddownloader/common/AlarmScheduler;
+│   │   │   │ -  #27 = NameAndType        #25:#26        // alarmScheduler:Lcom/github/notizklotz/derbunddownloader/common/AlarmScheduler;
+│   │   │   │ -  #28 = Fieldref           #2.#27         // com/github/notizklotz/derbunddownloader/download/AutomaticDownloadScheduler_.alarmScheduler:Lcom/github/notizklotz/derbunddownloader/common/AlarmScheduler;
+│   │   │   │ -  #29 = Utf8               com/github/notizklotz/derbunddownloader/settings/SettingsImpl_
+│   │   │   │ -  #30 = Class              #29            // com/github/notizklotz/derbunddownloader/settings/SettingsImpl_
+│   │   │   │ -  #31 = Utf8               (Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/settings/SettingsImpl_;
+│   │   │   │ -  #32 = NameAndType        #21:#31        // getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/settings/SettingsImpl_;
+│   │   │   │ -  #33 = Methodref          #30.#32        // com/github/notizklotz/derbunddownloader/settings/SettingsImpl_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/settings/SettingsImpl_;
+│   │   │   │ -  #34 = Utf8               settings
+│   │   │   │ -  #35 = Utf8               Lcom/github/notizklotz/derbunddownloader/settings/Settings;
+│   │   │   │ -  #36 = NameAndType        #34:#35        // settings:Lcom/github/notizklotz/derbunddownloader/settings/Settings;
+│   │   │   │ -  #37 = Fieldref           #2.#36         // com/github/notizklotz/derbunddownloader/download/AutomaticDownloadScheduler_.settings:Lcom/github/notizklotz/derbunddownloader/settings/Settings;
+│   │   │   │ +  #22 = Utf8               (Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/settings/SettingsImpl_;
+│   │   │   │ +  #23 = NameAndType        #21:#22        // getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/settings/SettingsImpl_;
+│   │   │   │ +  #24 = Methodref          #20.#23        // com/github/notizklotz/derbunddownloader/settings/SettingsImpl_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/settings/SettingsImpl_;
+│   │   │   │ +  #25 = Utf8               settings
+│   │   │   │ +  #26 = Utf8               Lcom/github/notizklotz/derbunddownloader/settings/Settings;
+│   │   │   │ +  #27 = NameAndType        #25:#26        // settings:Lcom/github/notizklotz/derbunddownloader/settings/Settings;
+│   │   │   │ +  #28 = Fieldref           #2.#27         // com/github/notizklotz/derbunddownloader/download/AutomaticDownloadScheduler_.settings:Lcom/github/notizklotz/derbunddownloader/settings/Settings;
+│   │   │   │ +  #29 = Utf8               com/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_
+│   │   │   │ +  #30 = Class              #29            // com/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_
+│   │   │   │ +  #31 = Utf8               (Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_;
+│   │   │   │ +  #32 = NameAndType        #21:#31        // getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_;
+│   │   │   │ +  #33 = Methodref          #30.#32        // com/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_;
+│   │   │   │ +  #34 = Utf8               alarmScheduler
+│   │   │   │ +  #35 = Utf8               Lcom/github/notizklotz/derbunddownloader/common/AlarmScheduler;
+│   │   │   │ +  #36 = NameAndType        #34:#35        // alarmScheduler:Lcom/github/notizklotz/derbunddownloader/common/AlarmScheduler;
+│   │   │   │ +  #37 = Fieldref           #2.#36         // com/github/notizklotz/derbunddownloader/download/AutomaticDownloadScheduler_.alarmScheduler:Lcom/github/notizklotz/derbunddownloader/common/AlarmScheduler;
+│   │   │   │    #38 = Utf8               Code
+│   │   │   │    #39 = Utf8               (Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/download/AutomaticDownloadScheduler_;
+│   │   │   │    #40 = Utf8               rebind
+│   │   │   │  {
+│   │   │   │    private android.content.Context context_;
+│   │   │   │      descriptor: Landroid/content/Context;
+│   │   │   │      flags: ACC_PRIVATE
+│   │   │   │ @@ -78,26 +78,26 @@
+│   │   │   │    private void init_();
+│   │   │   │      descriptor: ()V
+│   │   │   │      flags: ACC_PRIVATE
+│   │   │   │      Code:
+│   │   │   │        stack=300, locals=2, args_size=1
+│   │   │   │           0: aload_0
+│   │   │   │           1: getfield      #12                 // Field context_:Landroid/content/Context;
+│   │   │   │ -         4: invokestatic  #24                 // Method com/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_;
+│   │   │   │ +         4: invokestatic  #24                 // Method com/github/notizklotz/derbunddownloader/settings/SettingsImpl_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/settings/SettingsImpl_;
+│   │   │   │           7: astore_1
+│   │   │   │           8: aload_0
+│   │   │   │           9: aload_1
+│   │   │   │ -        10: putfield      #28                 // Field alarmScheduler:Lcom/github/notizklotz/derbunddownloader/common/AlarmScheduler;
+│   │   │   │ +        10: putfield      #28                 // Field settings:Lcom/github/notizklotz/derbunddownloader/settings/Settings;
+│   │   │   │          13: aload_0
+│   │   │   │          14: getfield      #12                 // Field context_:Landroid/content/Context;
+│   │   │   │ -        17: invokestatic  #33                 // Method com/github/notizklotz/derbunddownloader/settings/SettingsImpl_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/settings/SettingsImpl_;
+│   │   │   │ +        17: invokestatic  #33                 // Method com/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_;
+│   │   │   │          20: astore_1
+│   │   │   │          21: aload_0
+│   │   │   │          22: aload_1
+│   │   │   │ -        23: putfield      #37                 // Field settings:Lcom/github/notizklotz/derbunddownloader/settings/Settings;
+│   │   │   │ +        23: putfield      #37                 // Field alarmScheduler:Lcom/github/notizklotz/derbunddownloader/common/AlarmScheduler;
+│   │   │   │          26: return
+│   │   │   │  
+│   │   │   │    public void rebind(android.content.Context);
+│   │   │   │      descriptor: (Landroid/content/Context;)V
+│   │   │   │      flags: ACC_PUBLIC
+│   │   │   │      Code:
+│   │   │   │        stack=300, locals=2, args_size=2
+│   │   │   ╵
+│   │   ├── com/github/notizklotz/derbunddownloader/download/IssueDownloadService_.class
+│   │   │   ├── javap -verbose -constants -s -l -private {}
+│   │   │   │ @@ -63,32 +63,32 @@
+│   │   │   │     #58 = Utf8               (Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/download/EpaperApiClient_;
+│   │   │   │     #59 = NameAndType        #57:#58       // getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/download/EpaperApiClient_;
+│   │   │   │     #60 = Methodref          #56.#59       // com/github/notizklotz/derbunddownloader/download/EpaperApiClient_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/download/EpaperApiClient_;
+│   │   │   │     #61 = Utf8               epaperApiClient
+│   │   │   │     #62 = Utf8               Lcom/github/notizklotz/derbunddownloader/download/EpaperApiClient;
+│   │   │   │     #63 = NameAndType        #61:#62       // epaperApiClient:Lcom/github/notizklotz/derbunddownloader/download/EpaperApiClient;
+│   │   │   │     #64 = Fieldref           #2.#63        // com/github/notizklotz/derbunddownloader/download/IssueDownloadService_.epaperApiClient:Lcom/github/notizklotz/derbunddownloader/download/EpaperApiClient;
+│   │   │   │ -   #65 = Utf8               com/github/notizklotz/derbunddownloader/settings/SettingsImpl_
+│   │   │   │ -   #66 = Class              #65           // com/github/notizklotz/derbunddownloader/settings/SettingsImpl_
+│   │   │   │ -   #67 = Utf8               (Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/settings/SettingsImpl_;
+│   │   │   │ -   #68 = NameAndType        #57:#67       // getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/settings/SettingsImpl_;
+│   │   │   │ -   #69 = Methodref          #66.#68       // com/github/notizklotz/derbunddownloader/settings/SettingsImpl_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/settings/SettingsImpl_;
+│   │   │   │ -   #70 = Utf8               settings
+│   │   │   │ -   #71 = Utf8               Lcom/github/notizklotz/derbunddownloader/settings/Settings;
+│   │   │   │ -   #72 = NameAndType        #70:#71       // settings:Lcom/github/notizklotz/derbunddownloader/settings/Settings;
+│   │   │   │ -   #73 = Fieldref           #2.#72        // com/github/notizklotz/derbunddownloader/download/IssueDownloadService_.settings:Lcom/github/notizklotz/derbunddownloader/settings/Settings;
+│   │   │   │ -   #74 = Utf8               com/github/notizklotz/derbunddownloader/common/ThumbnailRegistry_
+│   │   │   │ -   #75 = Class              #74           // com/github/notizklotz/derbunddownloader/common/ThumbnailRegistry_
+│   │   │   │ -   #76 = Utf8               (Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/ThumbnailRegistry_;
+│   │   │   │ -   #77 = NameAndType        #57:#76       // getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/ThumbnailRegistry_;
+│   │   │   │ -   #78 = Methodref          #75.#77       // com/github/notizklotz/derbunddownloader/common/ThumbnailRegistry_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/ThumbnailRegistry_;
+│   │   │   │ -   #79 = Utf8               thumbnailRegistry
+│   │   │   │ -   #80 = Utf8               Lcom/github/notizklotz/derbunddownloader/common/ThumbnailRegistry;
+│   │   │   │ -   #81 = NameAndType        #79:#80       // thumbnailRegistry:Lcom/github/notizklotz/derbunddownloader/common/ThumbnailRegistry;
+│   │   │   │ -   #82 = Fieldref           #2.#81        // com/github/notizklotz/derbunddownloader/download/IssueDownloadService_.thumbnailRegistry:Lcom/github/notizklotz/derbunddownloader/common/ThumbnailRegistry;
+│   │   │   │ +   #65 = Utf8               com/github/notizklotz/derbunddownloader/common/ThumbnailRegistry_
+│   │   │   │ +   #66 = Class              #65           // com/github/notizklotz/derbunddownloader/common/ThumbnailRegistry_
+│   │   │   │ +   #67 = Utf8               (Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/ThumbnailRegistry_;
+│   │   │   │ +   #68 = NameAndType        #57:#67       // getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/ThumbnailRegistry_;
+│   │   │   │ +   #69 = Methodref          #66.#68       // com/github/notizklotz/derbunddownloader/common/ThumbnailRegistry_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/ThumbnailRegistry_;
+│   │   │   │ +   #70 = Utf8               thumbnailRegistry
+│   │   │   │ +   #71 = Utf8               Lcom/github/notizklotz/derbunddownloader/common/ThumbnailRegistry;
+│   │   │   │ +   #72 = NameAndType        #70:#71       // thumbnailRegistry:Lcom/github/notizklotz/derbunddownloader/common/ThumbnailRegistry;
+│   │   │   │ +   #73 = Fieldref           #2.#72        // com/github/notizklotz/derbunddownloader/download/IssueDownloadService_.thumbnailRegistry:Lcom/github/notizklotz/derbunddownloader/common/ThumbnailRegistry;
+│   │   │   │ +   #74 = Utf8               com/github/notizklotz/derbunddownloader/settings/SettingsImpl_
+│   │   │   │ +   #75 = Class              #74           // com/github/notizklotz/derbunddownloader/settings/SettingsImpl_
+│   │   │   │ +   #76 = Utf8               (Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/settings/SettingsImpl_;
+│   │   │   │ +   #77 = NameAndType        #57:#76       // getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/settings/SettingsImpl_;
+│   │   │   │ +   #78 = Methodref          #75.#77       // com/github/notizklotz/derbunddownloader/settings/SettingsImpl_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/settings/SettingsImpl_;
+│   │   │   │ +   #79 = Utf8               settings
+│   │   │   │ +   #80 = Utf8               Lcom/github/notizklotz/derbunddownloader/settings/Settings;
+│   │   │   │ +   #81 = NameAndType        #79:#80       // settings:Lcom/github/notizklotz/derbunddownloader/settings/Settings;
+│   │   │   │ +   #82 = Fieldref           #2.#81        // com/github/notizklotz/derbunddownloader/download/IssueDownloadService_.settings:Lcom/github/notizklotz/derbunddownloader/settings/Settings;
+│   │   │   │     #83 = Utf8               com/github/notizklotz/derbunddownloader/download/IssueDownloadService_$IntentBuilder_
+│   │   │   │     #84 = Class              #83           // com/github/notizklotz/derbunddownloader/download/IssueDownloadService_$IntentBuilder_
+│   │   │   │     #85 = Utf8               (Landroid/content/Context;)V
+│   │   │   │     #86 = NameAndType        #19:#85       // "<init>":(Landroid/content/Context;)V
+│   │   │   │     #87 = Methodref          #84.#86       // com/github/notizklotz/derbunddownloader/download/IssueDownloadService_$IntentBuilder_."<init>":(Landroid/content/Context;)V
+│   │   │   │     #88 = Utf8               init_
+│   │   │   │     #89 = NameAndType        #88:#20       // init_:()V
+│   │   │   │ @@ -200,25 +200,25 @@
+│   │   │   │          45: aload_0
+│   │   │   │          46: invokestatic  #60                 // Method com/github/notizklotz/derbunddownloader/download/EpaperApiClient_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/download/EpaperApiClient_;
+│   │   │   │          49: astore_1
+│   │   │   │          50: aload_0
+│   │   │   │          51: aload_1
+│   │   │   │          52: putfield      #64                 // Field epaperApiClient:Lcom/github/notizklotz/derbunddownloader/download/EpaperApiClient;
+│   │   │   │          55: aload_0
+│   │   │   │ -        56: invokestatic  #69                 // Method com/github/notizklotz/derbunddownloader/settings/SettingsImpl_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/settings/SettingsImpl_;
+│   │   │   │ +        56: invokestatic  #69                 // Method com/github/notizklotz/derbunddownloader/common/ThumbnailRegistry_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/ThumbnailRegistry_;
+│   │   │   │          59: astore_1
+│   │   │   │          60: aload_0
+│   │   │   │          61: aload_1
+│   │   │   │ -        62: putfield      #73                 // Field settings:Lcom/github/notizklotz/derbunddownloader/settings/Settings;
+│   │   │   │ +        62: putfield      #73                 // Field thumbnailRegistry:Lcom/github/notizklotz/derbunddownloader/common/ThumbnailRegistry;
+│   │   │   │          65: aload_0
+│   │   │   │ -        66: invokestatic  #78                 // Method com/github/notizklotz/derbunddownloader/common/ThumbnailRegistry_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/ThumbnailRegistry_;
+│   │   │   │ +        66: invokestatic  #78                 // Method com/github/notizklotz/derbunddownloader/settings/SettingsImpl_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/settings/SettingsImpl_;
+│   │   │   │          69: astore_1
+│   │   │   │          70: aload_0
+│   │   │   │          71: aload_1
+│   │   │   │ -        72: putfield      #82                 // Field thumbnailRegistry:Lcom/github/notizklotz/derbunddownloader/common/ThumbnailRegistry;
+│   │   │   │ +        72: putfield      #82                 // Field settings:Lcom/github/notizklotz/derbunddownloader/settings/Settings;
+│   │   │   │          75: return
+│   │   │   │  
+│   │   │   │    public static com.github.notizklotz.derbunddownloader.download.IssueDownloadService_$IntentBuilder_ intent(android.content.Context);
+│   │   │   │      descriptor: (Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/download/IssueDownloadService_$IntentBuilder_;
+│   │   │   │      flags: ACC_PUBLIC, ACC_STATIC
+│   │   │   │      Code:
+│   │   │   │        stack=300, locals=2, args_size=1
+│   │   │   ╵
+│   │   ├── com/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_.class
+│   │   │   ├── javap -verbose -constants -s -l -private {}
+│   │   │   │ @@ -31,33 +31,33 @@
+│   │   │   │    #26 = Methodref          #22.#25        // android/content/Context.getSystemService:(Ljava/lang/String;)Ljava/lang/Object;
+│   │   │   │    #27 = Utf8               android/app/AlarmManager
+│   │   │   │    #28 = Class              #27            // android/app/AlarmManager
+│   │   │   │    #29 = Utf8               alarmManager
+│   │   │   │    #30 = Utf8               Landroid/app/AlarmManager;
+│   │   │   │    #31 = NameAndType        #29:#30        // alarmManager:Landroid/app/AlarmManager;
+│   │   │   │    #32 = Fieldref           #2.#31         // com/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_.alarmManager:Landroid/app/AlarmManager;
+│   │   │   │ -  #33 = Utf8               com/github/notizklotz/derbunddownloader/common/internal/PendingIntentFactoryImpl_
+│   │   │   │ -  #34 = Class              #33            // com/github/notizklotz/derbunddownloader/common/internal/PendingIntentFactoryImpl_
+│   │   │   │ +  #33 = Utf8               com/github/notizklotz/derbunddownloader/common/ApiLevelChecker_
+│   │   │   │ +  #34 = Class              #33            // com/github/notizklotz/derbunddownloader/common/ApiLevelChecker_
+│   │   │   │    #35 = Utf8               getInstance_
+│   │   │   │ -  #36 = Utf8               (Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/PendingIntentFactoryImpl_;
+│   │   │   │ -  #37 = NameAndType        #35:#36        // getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/PendingIntentFactoryImpl_;
+│   │   │   │ -  #38 = Methodref          #34.#37        // com/github/notizklotz/derbunddownloader/common/internal/PendingIntentFactoryImpl_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/PendingIntentFactoryImpl_;
+│   │   │   │ -  #39 = Utf8               pendingIntentFactory
+│   │   │   │ -  #40 = Utf8               Lcom/github/notizklotz/derbunddownloader/common/PendingIntentFactory;
+│   │   │   │ -  #41 = NameAndType        #39:#40        // pendingIntentFactory:Lcom/github/notizklotz/derbunddownloader/common/PendingIntentFactory;
+│   │   │   │ -  #42 = Fieldref           #2.#41         // com/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_.pendingIntentFactory:Lcom/github/notizklotz/derbunddownloader/common/PendingIntentFactory;
+│   │   │   │ -  #43 = Utf8               com/github/notizklotz/derbunddownloader/common/ApiLevelChecker_
+│   │   │   │ -  #44 = Class              #43            // com/github/notizklotz/derbunddownloader/common/ApiLevelChecker_
+│   │   │   │ -  #45 = Utf8               (Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/ApiLevelChecker_;
+│   │   │   │ -  #46 = NameAndType        #35:#45        // getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/ApiLevelChecker_;
+│   │   │   │ -  #47 = Methodref          #44.#46        // com/github/notizklotz/derbunddownloader/common/ApiLevelChecker_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/ApiLevelChecker_;
+│   │   │   │ -  #48 = Utf8               apiLevelChecker
+│   │   │   │ -  #49 = Utf8               Lcom/github/notizklotz/derbunddownloader/common/ApiLevelChecker;
+│   │   │   │ -  #50 = NameAndType        #48:#49        // apiLevelChecker:Lcom/github/notizklotz/derbunddownloader/common/ApiLevelChecker;
+│   │   │   │ -  #51 = Fieldref           #2.#50         // com/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_.apiLevelChecker:Lcom/github/notizklotz/derbunddownloader/common/ApiLevelChecker;
+│   │   │   │ +  #36 = Utf8               (Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/ApiLevelChecker_;
+│   │   │   │ +  #37 = NameAndType        #35:#36        // getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/ApiLevelChecker_;
+│   │   │   │ +  #38 = Methodref          #34.#37        // com/github/notizklotz/derbunddownloader/common/ApiLevelChecker_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/ApiLevelChecker_;
+│   │   │   │ +  #39 = Utf8               apiLevelChecker
+│   │   │   │ +  #40 = Utf8               Lcom/github/notizklotz/derbunddownloader/common/ApiLevelChecker;
+│   │   │   │ +  #41 = NameAndType        #39:#40        // apiLevelChecker:Lcom/github/notizklotz/derbunddownloader/common/ApiLevelChecker;
+│   │   │   │ +  #42 = Fieldref           #2.#41         // com/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_.apiLevelChecker:Lcom/github/notizklotz/derbunddownloader/common/ApiLevelChecker;
+│   │   │   │ +  #43 = Utf8               com/github/notizklotz/derbunddownloader/common/internal/PendingIntentFactoryImpl_
+│   │   │   │ +  #44 = Class              #43            // com/github/notizklotz/derbunddownloader/common/internal/PendingIntentFactoryImpl_
+│   │   │   │ +  #45 = Utf8               (Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/PendingIntentFactoryImpl_;
+│   │   │   │ +  #46 = NameAndType        #35:#45        // getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/PendingIntentFactoryImpl_;
+│   │   │   │ +  #47 = Methodref          #44.#46        // com/github/notizklotz/derbunddownloader/common/internal/PendingIntentFactoryImpl_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/PendingIntentFactoryImpl_;
+│   │   │   │ +  #48 = Utf8               pendingIntentFactory
+│   │   │   │ +  #49 = Utf8               Lcom/github/notizklotz/derbunddownloader/common/PendingIntentFactory;
+│   │   │   │ +  #50 = NameAndType        #48:#49        // pendingIntentFactory:Lcom/github/notizklotz/derbunddownloader/common/PendingIntentFactory;
+│   │   │   │ +  #51 = Fieldref           #2.#50         // com/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_.pendingIntentFactory:Lcom/github/notizklotz/derbunddownloader/common/PendingIntentFactory;
+│   │   │   │    #52 = Utf8               Code
+│   │   │   │    #53 = Utf8               (Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/AlarmSchedulerImpl_;
+│   │   │   │    #54 = Utf8               rebind
+│   │   │   │  {
+│   │   │   │    private android.content.Context context_;
+│   │   │   │      descriptor: Landroid/content/Context;
+│   │   │   │      flags: ACC_PRIVATE
+│   │   │   │ @@ -101,26 +101,26 @@
+│   │   │   │           9: checkcast     #28                 // class android/app/AlarmManager
+│   │   │   │          12: astore_1
+│   │   │   │          13: aload_0
+│   │   │   │          14: aload_1
+│   │   │   │          15: putfield      #32                 // Field alarmManager:Landroid/app/AlarmManager;
+│   │   │   │          18: aload_0
+│   │   │   │          19: getfield      #12                 // Field context_:Landroid/content/Context;
+│   │   │   │ -        22: invokestatic  #38                 // Method com/github/notizklotz/derbunddownloader/common/internal/PendingIntentFactoryImpl_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/PendingIntentFactoryImpl_;
+│   │   │   │ +        22: invokestatic  #38                 // Method com/github/notizklotz/derbunddownloader/common/ApiLevelChecker_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/ApiLevelChecker_;
+│   │   │   │          25: astore_1
+│   │   │   │          26: aload_0
+│   │   │   │          27: aload_1
+│   │   │   │ -        28: putfield      #42                 // Field pendingIntentFactory:Lcom/github/notizklotz/derbunddownloader/common/PendingIntentFactory;
+│   │   │   │ +        28: putfield      #42                 // Field apiLevelChecker:Lcom/github/notizklotz/derbunddownloader/common/ApiLevelChecker;
+│   │   │   │          31: aload_0
+│   │   │   │          32: getfield      #12                 // Field context_:Landroid/content/Context;
+│   │   │   │ -        35: invokestatic  #47                 // Method com/github/notizklotz/derbunddownloader/common/ApiLevelChecker_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/ApiLevelChecker_;
+│   │   │   │ +        35: invokestatic  #47                 // Method com/github/notizklotz/derbunddownloader/common/internal/PendingIntentFactoryImpl_.getInstance_:(Landroid/content/Context;)Lcom/github/notizklotz/derbunddownloader/common/internal/PendingIntentFactoryImpl_;
+│   │   │   │          38: astore_1
+│   │   │   │          39: aload_0
+│   │   │   │          40: aload_1
+│   │   │   │ -        41: putfield      #51                 // Field apiLevelChecker:Lcom/github/notizklotz/derbunddownloader/common/ApiLevelChecker;
+│   │   │   │ +        41: putfield      #51                 // Field pendingIntentFactory:Lcom/github/notizklotz/derbunddownloader/common/PendingIntentFactory;
+│   │   │   │          44: return
+│   │   │   │  
+│   │   │   │    public void rebind(android.content.Context);
+│   │   │   │      descriptor: (Landroid/content/Context;)V
+│   │   │   │      flags: ACC_PUBLIC
+│   │   │   │      Code:
+│   │   │   │        stack=300, locals=2, args_size=2
+│   │   │   ╵
+│   │   ├── com/github/notizklotz/derbunddownloader/issuesgrid/DownloadedIssuesActivity_.class
+│   │   │   ├── javap -verbose -constants -s -l -private {}
+│   │   │   │ @@ -132,29 +132,29 @@
+│   │   │   │    #127 = Methodref          #4.#126       // com/github/notizklotz/derbunddownloader/issuesgrid/DownloadedIssuesActivity.onKeyDown:(ILandroid/view/KeyEvent;)Z
+│   │   │   │    #128 = Float              1.4E-45f
+│   │   │   │    #129 = Utf8               android/view/MenuItem
+│   │   │   │    #130 = Class              #129          // android/view/MenuItem
+│   │   │   │    #131 = Utf8               getItemId
+│   │   │   │    #132 = NameAndType        #131:#111     // getItemId:()I
+│   │   │   │    #133 = InterfaceMethodref #130.#132     // android/view/MenuItem.getItemId:()I
+│   │   │   │ -  #134 = Integer            2131689606
+│   │   │   │ -  #135 = Float              1.9008232E38f
+│   │   │   │ -  #136 = Utf8               menuItemSettingsSelected
+│   │   │   │ -  #137 = NameAndType        #136:#12      // menuItemSettingsSelected:()V
+│   │   │   │ -  #138 = Methodref          #2.#137       // com/github/notizklotz/derbunddownloader/issuesgrid/DownloadedIssuesActivity_.menuItemSettingsSelected:()V
+│   │   │   │ +  #134 = Integer            2131689605
+│   │   │   │ +  #135 = Float              1.900823E38f
+│   │   │   │ +  #136 = Utf8               showDeleteAllIssuesDialog
+│   │   │   │ +  #137 = NameAndType        #136:#12      // showDeleteAllIssuesDialog:()V
+│   │   │   │ +  #138 = Methodref          #2.#137       // com/github/notizklotz/derbunddownloader/issuesgrid/DownloadedIssuesActivity_.showDeleteAllIssuesDialog:()V
+│   │   │   │    #139 = Integer            2131689604
+│   │   │   │    #140 = Float              1.9008228E38f
+│   │   │   │    #141 = Utf8               menuItemDownloadSelected
+│   │   │   │    #142 = NameAndType        #141:#12      // menuItemDownloadSelected:()V
+│   │   │   │    #143 = Methodref          #2.#142       // com/github/notizklotz/derbunddownloader/issuesgrid/DownloadedIssuesActivity_.menuItemDownloadSelected:()V
+│   │   │   │ -  #144 = Integer            2131689605
+│   │   │   │ -  #145 = Float              1.900823E38f
+│   │   │   │ -  #146 = Utf8               showDeleteAllIssuesDialog
+│   │   │   │ -  #147 = NameAndType        #146:#12      // showDeleteAllIssuesDialog:()V
+│   │   │   │ -  #148 = Methodref          #2.#147       // com/github/notizklotz/derbunddownloader/issuesgrid/DownloadedIssuesActivity_.showDeleteAllIssuesDialog:()V
+│   │   │   │ +  #144 = Integer            2131689606
+│   │   │   │ +  #145 = Float              1.9008232E38f
+│   │   │   │ +  #146 = Utf8               menuItemSettingsSelected
+│   │   │   │ +  #147 = NameAndType        #146:#12      // menuItemSettingsSelected:()V
+│   │   │   │ +  #148 = Methodref          #2.#147       // com/github/notizklotz/derbunddownloader/issuesgrid/DownloadedIssuesActivity_.menuItemSettingsSelected:()V
+│   │   │   │    #149 = Utf8               onOptionsItemSelected
+│   │   │   │    #150 = Utf8               (Landroid/view/MenuItem;)Z
+│   │   │   │    #151 = NameAndType        #149:#150     // onOptionsItemSelected:(Landroid/view/MenuItem;)Z
+│   │   │   │    #152 = Methodref          #4.#151       // com/github/notizklotz/derbunddownloader/issuesgrid/DownloadedIssuesActivity.onOptionsItemSelected:(Landroid/view/MenuItem;)Z
+│   │   │   │    #153 = Integer            2131689577
+│   │   │   │    #154 = Float              1.9008173E38f
+│   │   │   │    #155 = Utf8               findViewById
+│   │   │   │ @@ -362,38 +362,38 @@
+│   │   │   │      Code:
+│   │   │   │        stack=300, locals=5, args_size=2
+│   │   │   │           0: iconst_1
+│   │   │   │           1: istore_2
+│   │   │   │           2: aload_1
+│   │   │   │           3: invokeinterface #133,  1          // InterfaceMethod android/view/MenuItem.getItemId:()I
+│   │   │   │           8: istore_3
+│   │   │   │ -         9: ldc           #134                // int 2131689606
+│   │   │   │ +         9: ldc           #134                // int 2131689605
+│   │   │   │          11: istore        4
+│   │   │   │          13: iload_3
+│   │   │   │          14: iload         4
+│   │   │   │          16: if_icmpne     25
+│   │   │   │          19: aload_0
+│   │   │   │ -        20: invokevirtual #138                // Method menuItemSettingsSelected:()V
+│   │   │   │ +        20: invokevirtual #138                // Method showDeleteAllIssuesDialog:()V
+│   │   │   │          23: iload_2
+│   │   │   │          24: ireturn
+│   │   │   │          25: ldc           #139                // int 2131689604
+│   │   │   │          27: istore        4
+│   │   │   │          29: iload_3
+│   │   │   │          30: iload         4
+│   │   │   │          32: if_icmpne     42
+│   │   │   │          35: aload_0
+│   │   │   │          36: invokevirtual #143                // Method menuItemDownloadSelected:()V
+│   │   │   │          39: goto          23
+│   │   │   │ -        42: ldc           #144                // int 2131689605
+│   │   │   │ +        42: ldc           #144                // int 2131689606
+│   │   │   │          44: istore        4
+│   │   │   │          46: iload_3
+│   │   │   │          47: iload         4
+│   │   │   │          49: if_icmpne     59
+│   │   │   │          52: aload_0
+│   │   │   │ -        53: invokevirtual #148                // Method showDeleteAllIssuesDialog:()V
+│   │   │   │ +        53: invokevirtual #148                // Method menuItemSettingsSelected:()V
+│   │   │   │          56: goto          23
+│   │   │   │          59: aload_0
+│   │   │   │          60: aload_1
+│   │   │   │          61: invokespecial #152                // Method com/github/notizklotz/derbunddownloader/issuesgrid/DownloadedIssuesActivity.onOptionsItemSelected:(Landroid/view/MenuItem;)Z
+│   │   │   │          64: istore_2
+│   │   │   │          65: goto          23
+│   │   │   │  
+│   │   │   ╵
+│   │   ╵
+│   ╵
+╵

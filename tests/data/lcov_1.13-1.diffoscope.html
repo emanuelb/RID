@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="referrer" content="no-referrer" />
+  <meta name="generator" content="diffoscope" />
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADdgAAA3YBfdWCzAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAM8SURBVFiF7dZdaJZlGAfw3/O+e9XNjy3XllZzWImBxIpifqTgsmUHBSIeBNFBdRh0UHQ0xGdb66CFBIERZEFRQRRUw0HkQkLMYQSBdpCFWdgSP6jpNn2393k68Nn2bj3vXtb6UOh/cl/39b/u67mem/913zf/4z9GUDw5xNI8n5WIzW9m/QF2YluJmI8203mALzEvLWAerRs4Pz6vSIkZSlsYk0/GkaB0zEgyDgWMlijyWsJuS2fkQwu8pqpMTA0ypeiShG71Bp0rU8Q+A47MWEDgvHZbZl/Av4SpIgxVYB3IqwZDmoUuYkzosDaNchpAoFqkSmgjGPWzLieF1k3JHVsjvCJQHBYaSy9g1E3m+QImQiK9SbNGqJDzuiDZ0lggQJCsyelDq8BB47sbCWTsnvhG3kqcLL833eqF4hk1EOoTOjZjnnaRdq2l6KtMAyl4/g23bKJrun+Mt9uOq7nvqOVbebWYy9Adc1fM/R/3CO780dONbIeFPHsPw+ULeM5ZHTbXHfUtXpxOZzgT5z02UGsZThRzF/ilht9G+fr4zfbfccIxXIa7uVTup69i7LJXaEEqF3on1d9ludBLpVLOVoT1lky9QYtwQ6p3WAVqSyUslWwSbRrkPJrMtgn0iBVk7BPJ4sGE24EPQKW3jLgdzWKLBTbg0yTuZeGkDsp2gcUGDesHGQ/gK5G8nLMigWiCe3jCrnTRiJ9EYjm1ImsUEq5l8hScPXbpsVtlKhfan+pv0yD0ZqmU5XegGBmnDIo/pylj8oYLOP3Eab/v5Zmi6EtZ3vv1FU/2r7LioYSL2dNybbdiMdptFU57++20Vqh+iq/Tap1WpaWY611wmyWyUzxZDbIWTvEV1Ildn5agfBumoUMTtoisFvhebAAHZWxX0ChwTuScvHdVeVykToysMyJ7ittwbmj31J+6IrRDp5XTfBt1WJ+WYnZdMB0F3xlUgD5uDVj2Sa+a4SrzH+FeyHHmw17V112waBOZgP4WczkLZsILar1fpIliMU4XZoK/poE0XHl+N8v6QcGAUbVymnDIZVnzrTXqGzmnhKLxZX/niyiDjIJgwg4Se1GR/Y8idGPysh6fr0i1i/AHMWHgrwUJgNAAAAAASUVORK5CYII=" />
+  <title>/usr/bin/diffoscope --html /srv/reproducible-results/rbuild-debian-PWyTGhXL/lcov_1.13-1.diffoscope.html --text /srv/reproducible-results/rbuild-debian-PWyTGhXL/lcov_1.13-1.diffoscope.txt /srv/reproducible-results/rbuild-debian-PWyTGhXL/b1/lcov_1.13-1_amd64.changes /srv/reproducible-results/rbuild-debian-PWyTGhXL/b2/lcov_1.13-1_amd64.changes</title>
+  <style type="text/css">
+    body.diffoscope {
+      background: white;
+      color: black;
+    }
+    .diffoscope .footer {
+      font-size: small;
+    }
+    .diffoscope .difference {
+      border: outset #888 1px;
+      background: #E8E8E8;
+      background: rgba(0,0,0,.1);
+      padding: 0.5em;
+      margin: 0.5em 0;
+    }
+    .diffoscope .difference table {
+      table-layout: fixed;
+      width: 100%;
+      border: 0;
+    }
+    .diffoscope .difference th,
+    .diffoscope .difference td {
+      border: 0;
+    }
+    .diffoscope table.diff {
+      border: 0;
+      border-collapse:collapse;
+      font-size:0.75em;
+      font-family: 'Lucida Console', monospace;
+    }
+    .diffoscope table.diff tr:hover td {
+      background: #FFFF00;
+    }
+    .diffoscope .line {
+      color:#8080a0
+    }
+    .diffoscope th {
+      background: black;
+      color: white
+    }
+    .diffoscope .diffunmodified td {
+      background: #D0D0E0
+    }
+    .diffoscope .diffhunk td {
+      background: #A0A0A0
+    }
+    .diffoscope .diffadded td {
+      background: #CCFFCC
+    }
+    .diffoscope .diffdeleted td {
+      background: #FFCCCC
+    }
+    .diffoscope .diffchanged td {
+      background: #FFFFA0
+    }
+    .diffoscope ins, del {
+      background: #E0C880;
+      text-decoration: none
+    }
+    .diffoscope .diffponct {
+      color: #B08080
+    }
+    .diffoscope .comment {
+      font-style: italic;
+    }
+    .diffoscope .source {
+      font-weight: bold;
+    }
+    .diffoscope .error {
+      border: solid black 1px;
+      background: red;
+      color: white;
+      padding: 0.2em;
+    }
+    .diffoscope .anchor {
+      margin-left: 0.5em;
+      font-size: 80%;
+      color: #333;
+      text-decoration: none;
+      display: none;
+    }
+    .diffoscope .diffheader:hover .anchor {
+      display: inline;
+    }
+    .diffoscope table.diff tr.ondemand td {
+      background: #f99;
+      text-align: center;
+      padding: 0.5em 0;
+    }
+    .diffoscope table.diff tr.ondemand:hover td {
+      background: #faa;
+      cursor: pointer;
+    }
+    .diffoscope .diffcontrol {
+      float: left;
+      margin-right: 0.3em;
+      cursor: pointer;
+      display: none; /* currently, only available in html-dir output where jquery is enabled */
+    }
+    .diffoscope .diffcontrol-double {
+      line-height: 200%;
+    }
+  </style>
+  
+</head>
+<body class="diffoscope">
+
+<div class="difference">
+<div class="diffheader">
+<div class="diffcontrol diffcontrol-double">[−]</div>
+<div><span class="source">/srv/reproducible-results/rbuild-debian-PWyTGhXL/b1/lcov_1.13-1_amd64.changes</span> vs.</div>
+<div><span class="source">/srv/reproducible-results/rbuild-debian-PWyTGhXL/b2/lcov_1.13-1_amd64.changes</span>
+ <a class="anchor" href="#" name="">¶</a>
+</div>
+</div>
+<div class="difference">
+<div class="diffheader">
+<div class="diffcontrol">[−]</div>
+<div><span class="source">Files</span>
+ <a class="anchor" href="#Files" name="Files">¶</a>
+</div>
+</div>
+<table class="diff">
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 2 lines modified</td>
+<td colspan="2">Offset 1, 2 lines modified</td></tr>
+
+<tr class="diffunmodified">
+<td colspan="2"> </td>
+<td colspan="2"> </td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<del>48eefc3</del>7<del>a</del>2<del>3f08</del>de<del>76</del>1<del>5f​aa5ce7</del>2<del>f2e7</del><span class="diffponct">·</span>​12<del>7</del>780<span class="diffponct">·</span>​devel<span class="diffponct">·</span>​optional<span class="diffponct">·</span>​lcov_1.​13-​1_all.​deb
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<ins>1d079</ins>7<ins>4</ins>2<ins>2379</ins>de<ins>435</ins>1<ins>860​12ffaa</ins>2<ins>898b</ins><span class="diffponct">·</span>​12780<ins>4</ins><span class="diffponct">·</span>​devel<span class="diffponct">·</span>​optional<span class="diffponct">·</span>​lcov_1.​13-​1_all.​deb
+</td>
+</tr>
+
+</table>
+</div>
+<div class="difference">
+<div class="diffheader">
+<div class="diffcontrol">[−]</div>
+<div><span class="source">lcov_1.13-1_all.deb</span>
+ <a class="anchor" href="#lcov_1.13-1_all.deb" name="lcov_1.13-1_all.deb">¶</a>
+</div>
+</div>
+<div class="difference">
+<div class="diffheader">
+<div class="diffcontrol">[−]</div>
+<div><span class="source">file list</span>
+ <a class="anchor" href="#lcov_1.13-1_all.deb/file list" name="lcov_1.13-1_all.deb/file list">¶</a>
+</div>
+</div>
+<table class="diff">
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 3 lines modified</td>
+<td colspan="2">Offset 1, 3 lines modified</td></tr>
+
+<tr class="diffunmodified">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​debian-​binary
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​debian-​binary
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">2 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​1435<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​control.​tar.​gz
+</td>
+<td class="diffline">2 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​1435<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​control.​tar.​gz
+</td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">3 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​1261<del>52</del><span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​data.​tar.​xz
+</td>
+<td class="diffline">3 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​1261<ins>76</ins><span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​data.​tar.​xz
+</td>
+</tr>
+
+</table>
+</div>
+<div class="difference">
+<div class="diffheader">
+<div class="diffcontrol">[−]</div>
+<div><span class="source">data.tar.xz</span>
+ <a class="anchor" href="#lcov_1.13-1_all.deb/data.tar.xz" name="lcov_1.13-1_all.deb/data.tar.xz">¶</a>
+</div>
+</div>
+<div class="difference">
+<div class="diffheader">
+<div class="diffcontrol">[−]</div>
+<div><span class="source">data.tar</span>
+ <a class="anchor" href="#lcov_1.13-1_all.deb/data.tar.xz/data.tar" name="lcov_1.13-1_all.deb/data.tar.xz/data.tar">¶</a>
+</div>
+</div>
+<div class="difference">
+<div class="diffheader">
+<div class="diffcontrol">[−]</div>
+<div><span class="source">file list</span>
+ <a class="anchor" href="#lcov_1.13-1_all.deb/data.tar.xz/data.tar/file list" name="lcov_1.13-1_all.deb/data.tar.xz/data.tar/file list">¶</a>
+</div>
+</div>
+<table class="diff">
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 16 lines modified</td>
+<td colspan="2">Offset 1, 16 lines modified</td></tr>
+
+<tr class="diffunmodified">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">2 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​etc/​
+</td>
+<td class="diffline">2 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​etc/​
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">3 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​5319<span class="diffponct">·</span>​2016-​12-​19<span class="diffponct">·</span>​15:​05:​06.​000000<span class="diffponct">·</span>​.​/​etc/​lcovrc
+</td>
+<td class="diffline">3 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​5319<span class="diffponct">·</span>​2016-​12-​19<span class="diffponct">·</span>​15:​05:​06.​000000<span class="diffponct">·</span>​.​/​etc/​lcovrc
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">4 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​usr/​
+</td>
+<td class="diffline">4 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​usr/​
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">5 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​usr/​bin/​
+</td>
+<td class="diffline">5 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​usr/​bin/​
+</td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">6 </td>
+<td class="diffpresent">
+-​rwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4622<span class="diffponct">·</span>​2016-​12-​<del>20</del><span class="diffponct">·</span>​0<del>2</del>:​05:​06.​000000<span class="diffponct">·</span>​.​/​usr/​bin/​gendesc
+</td>
+<td class="diffline">6 </td>
+<td class="diffpresent">
+-​rwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4622<span class="diffponct">·</span>​2016-​12-​<ins>19</ins><span class="diffponct">·</span>​0<ins>0</ins>:​05:​06.​000000<span class="diffponct">·</span>​.​/​usr/​bin/​gendesc
+</td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">7 </td>
+<td class="diffpresent">
+-​rwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​144721<span class="diffponct">·</span>​2016-​12-​<del>20</del><span class="diffponct">·</span>​0<del>2</del>:​05:​06.​000000<span class="diffponct">·</span>​.​/​usr/​bin/​genhtml
+</td>
+<td class="diffline">7 </td>
+<td class="diffpresent">
+-​rwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​144721<span class="diffponct">·</span>​2016-​12-​<ins>19</ins><span class="diffponct">·</span>​0<ins>0</ins>:​05:​06.​000000<span class="diffponct">·</span>​.​/​usr/​bin/​genhtml
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">8 </td>
+<td class="diffpresent">
+-​rwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​89055<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​usr/​bin/​geninfo
+</td>
+<td class="diffline">8 </td>
+<td class="diffpresent">
+-​rwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​89055<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​usr/​bin/​geninfo
+</td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">9 </td>
+<td class="diffpresent">
+-​rwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​9670<span class="diffponct">·</span>​2016-​12-​<del>20</del><span class="diffponct">·</span>​0<del>2</del>:​05:​06.​000000<span class="diffponct">·</span>​.​/​usr/​bin/​genpng
+</td>
+<td class="diffline">9 </td>
+<td class="diffpresent">
+-​rwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​9670<span class="diffponct">·</span>​2016-​12-​<ins>19</ins><span class="diffponct">·</span>​0<ins>0</ins>:​05:​06.​000000<span class="diffponct">·</span>​.​/​usr/​bin/​genpng
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">10 </td>
+<td class="diffpresent">
+-​rwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​102649<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​usr/​bin/​lcov
+</td>
+<td class="diffline">10 </td>
+<td class="diffpresent">
+-​rwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​102649<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​usr/​bin/​lcov
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">11 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​usr/​share/​
+</td>
+<td class="diffline">11 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​usr/​share/​
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">12 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​usr/​share/​doc/​
+</td>
+<td class="diffline">12 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​usr/​share/​doc/​
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">13 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​usr/​share/​doc/​lcov/​
+</td>
+<td class="diffline">13 </td>
+<td class="diffpresent">
+drwxr-​xr-​x<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​usr/​share/​doc/​lcov/​
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">14 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​2054<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​usr/​share/​doc/​lcov/​changelog.​Debian.​gz
+</td>
+<td class="diffline">14 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​2054<span class="diffponct">·</span>​2016-​12-​21<span class="diffponct">·</span>​08:​25:​40.​000000<span class="diffponct">·</span>​.​/​usr/​share/​doc/​lcov/​changelog.​Debian.​gz
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">15 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​33314<span class="diffponct">·</span>​2016-​12-​19<span class="diffponct">·</span>​15:​09:​14.​000000<span class="diffponct">·</span>​.​/​usr/​share/​doc/​lcov/​changelog.​gz
+</td>
+<td class="diffline">15 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​33314<span class="diffponct">·</span>​2016-​12-​19<span class="diffponct">·</span>​15:​09:​14.​000000<span class="diffponct">·</span>​.​/​usr/​share/​doc/​lcov/​changelog.​gz
+</td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">16 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​386<span class="diffponct">·</span>​2010-​03-​02<span class="diffponct">·</span>​12:​30:​07.​000000<span class="diffponct">·</span>​.​/​usr/​share/​doc/​lcov/​copyright
+</td>
+<td class="diffline">16 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​root<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​(0)​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​386<span class="diffponct">·</span>​2010-​03-​02<span class="diffponct">·</span>​12:​30:​07.​000000<span class="diffponct">·</span>​.​/​usr/​share/​doc/​lcov/​copyright
+</td>
+</tr>
+
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer">Generated by <a href="https://diffoscope.org" rel="noopener noreferrer" target="_blank">diffoscope</a> 64</div>
+</body>
+</html>
+

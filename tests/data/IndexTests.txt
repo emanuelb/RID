@@ -1,0 +1,31 @@
+####################
+# HTML Only Issues #
+####################
+
+diffoscope_run_for_ever.html
+
+	-Issue: diffoscope_runs_forever
+
+python-mne_0.13.1+dfsg-1.diffoscope.html
+
+	- Issue: linecut https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=836786
+	
+#####################
+# HTML & TXT Issues #
+#####################
+	
+com.github.notizklotz.derbunddownloader_18.apk.diffoscope.txt
+com.github.notizklotz.derbunddownloader_18.apk.diffoscope.html
+
+	- CRC diff in zipinfo -v is useless 
+	- Issue: javap order only difference
+
+phpldapadmin_1.2.2-6.diffoscope.html
+phpldapadmin_1.2.2-6.diffoscope.txt
+
+	- Issue: umask only in 'file list'
+	
+lcov_1.13-1.diffoscope.html
+lcov_1.13-1.diffoscope.txt
+
+	- Issue: timestamps only in 'file list'
