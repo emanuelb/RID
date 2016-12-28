@@ -70,7 +70,8 @@ def process(filecontent , file_path_input):
         Column("source_tree", Text, nullable=True),
         Column("processors", Text, nullable=True),
         Column("comments", Text, nullable=True),
-        Column("ordering",  String(250), nullable=True),        
+        Column("ordering",  String(250), nullable=True),
+        Column("differences",  String(250), nullable=True),
     )    
     
     Issues = Table(
@@ -174,7 +175,7 @@ def process(filecontent , file_path_input):
         comments_arr = json.dumps(comments_arr)
         orders_arr = json.dumps(orders_arr)
                 
-        block_id=engine.execute(Blocks.insert().values(diff_id=diff_id,source=last_source,source_tree=source_tail,processors=processors_arr,comments=comments_arr,ordering=orders_arr)).inserted_primary_key[0]
+        block_id=engine.execute(Blocks.insert().values(diff_id=diff_id,source=last_source,source_tree=source_tail,processors=processors_arr,comments=comments_arr,ordering=orders_arr,differences=differences_arr)).inserted_primary_key[0]
 
         diffin = block.find('.//diffin')
         if diffin is not None:
