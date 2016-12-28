@@ -278,8 +278,10 @@ def process( filecontent , file_path_input ):
                 elif right_diff_arr_len == 1:
                     if this_processor == "metadata":
                         if left_diff_arr_len == len(list(set(remove_timestamps_metadata(right_diff_arr)+remove_timestamps_metadata(left_diff_arr)))):
+                            ET.SubElement(cur, "difference").text = "timestamps"
                     elif this_processor == "readelf --wide --notes {}":
                         if left_diff_arr_len == len(list(set(remove_buildid(right_diff_arr)+remove_buildid(left_diff_arr)))):
+                            ET.SubElement(cur, "difference").text = "buildid"
                             
             cur = retcur
             

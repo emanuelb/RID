@@ -149,22 +149,27 @@ def process(filecontent , file_path_input):
                 source_tail += source1.attrib['path1'] + " [=] " + source1.attrib['path2'] + "/" # vs.
             source_tail=source_tail[0:-1]
             last_source = sources1[lensources1-1].attrib['path1'] + " [=] " + sources1[lensources1-1].attrib['path2']
-                    
+        
+        differences=block.findall('.//difference')            
         processors=block.findall('.//processor')
         comments=block.findall('.//comment')
         orders=block.findall('.//order')
         
-        processors_arr = []
+        differences_arr = []        
+        processors_arr = []     
         comments_arr = []
         orders_arr = []
-        
+
+        for difference in differences:
+            differences_arr.append(difference.text)
         for processor in processors:
             processors_arr.append(processor.text)
         for comment in comments:
-            comments_arr.append(comment.text)            
+            comments_arr.append(comment.text)
         for order in orders:
             orders_arr.append(order.text)
-            
+
+        differences_arr = json.dumps(differences_arr)
         processors_arr = json.dumps(processors_arr)
         comments_arr = json.dumps(comments_arr)
         orders_arr = json.dumps(orders_arr)
