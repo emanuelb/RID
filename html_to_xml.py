@@ -33,6 +33,11 @@ def remove_timestamps_metadata(list):
     # last modified: Fri Dec  9 19:33:30 2016
     return [re.sub(', last modified: \w{3} \w{3}\s{1,2}\d{1,2} {1,2}\d{1,2}:\d{1,2}:\d{1,2} {1,2}\d{4}', '', line, 1) for line in list]
 
+def remove_buildid(list):
+    #    Build ID: 724e2598e634b0fc8d4776edf899620d8eade173
+    #    Build ID: 4dab7388b465a348c41b0608bb1952a6ecb429b1
+    return [re.sub('\s+Build ID: [0-9a-f]{40}$', '', line, 1) for line in list]
+    
 # To strip <ins> & <del> for hex output in hexdump
 def StripLenExcludeTags(text_with_tags, length_to_strip):
     chars_added = 0
@@ -273,7 +278,8 @@ def process( filecontent , file_path_input ):
                 elif right_diff_arr_len == 1:
                     if this_processor == "metadata":
                         if left_diff_arr_len == len(list(set(remove_timestamps_metadata(right_diff_arr)+remove_timestamps_metadata(left_diff_arr)))):
-                            ET.SubElement(cur, "metadata").text = "metadata: sorted file order without timestamps"              
+                    elif this_processor == "readelf --wide --notes {}":
+                        if left_diff_arr_len == len(list(set(remove_buildid(right_diff_arr)+remove_buildid(left_diff_arr)))):
                             
             cur = retcur
             
