@@ -37,6 +37,11 @@ def remove_buildid(list):
     #    Build ID: 724e2598e634b0fc8d4776edf899620d8eade173
     #    Build ID: 4dab7388b465a348c41b0608bb1952a6ecb429b1
     return [re.sub('\s+Build ID: [0-9a-f]{40}$', '', line, 1) for line in list]
+
+def remove_pdfid1(list):
+    #/ID [<85d8c26d8e7b7b2de3eb53d86921620f> <85d8c26d8e7b7b2de3eb53d86921620f>]
+    #/ID [<3a66d7781ccd502c2ab53699995183ab> <3a66d7781ccd502c2ab53699995183ab>]
+    return [re.sub('/ID \[\<[a-fA-F0-9]{32}\> \<[a-fA-F0-9]{32}\>\]', '', line, 1) for line in list]
     
 # To strip <ins> & <del> for hex output in hexdump
 def StripLenExcludeTags(text_with_tags, length_to_strip):
@@ -282,6 +287,9 @@ def process( filecontent , file_path_input ):
                     elif this_processor == "readelf --wide --notes {}":
                         if left_diff_arr_len == len(list(set(remove_buildid(right_diff_arr)+remove_buildid(left_diff_arr)))):
                             ET.SubElement(cur, "difference").text = "buildid"
+                    elif this_processor == "pdftk {} output - uncompress":
+                        if left_diff_arr_len == len(list(set(remove_pdfid1(right_diff_arr)+remove_pdfid1(left_diff_arr)))):
+                            ET.SubElement(cur, "difference").text = "pdfid1"
                             
             cur = retcur
             

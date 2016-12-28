@@ -17,7 +17,7 @@ python-mne_0.13.1+dfsg-1.diffoscope.html
 com.github.notizklotz.derbunddownloader_18.apk.diffoscope.txt
 com.github.notizklotz.derbunddownloader_18.apk.diffoscope.html
 
-	- CRC diff in zipinfo -v is useless 
+	- CRC diff in zipinfo -v is useless **
 	- Issue: javap order only difference
 
 phpldapadmin_1.2.2-6.diffoscope.html
@@ -40,3 +40,8 @@ dict-bouvier_6.revised-3.3.diffoscope.html
 dict-bouvier_6.revised-3.3.diffoscope.txt
 
 	- Issue: timestamps only in 'metadata' (timestamps_in_dictionaries)
+
+tig_2.2-1.diffoscope.html
+tig_2.2-1.diffoscope.txt
+	
+	- Issue: timestamps in HTML (generic) - (note say: timestamps_in_documentation_generated_by_asciidoc, if so need code check) **
