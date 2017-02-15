@@ -7,6 +7,6 @@ if [ ! -d "$DIRECTORY" ]; then
   mkdir -p  "$DIRECTORY"
 fi
 cd "./$DIRECTORY"
-#wget -nc -r -nH -nd -np -R "\?*" --no-check-certificate http://37.218.242.117/ -A txt
-wget -nc -r -nH -nd -np -R "\?*" --no-check-certificate "http://37.218.242.117/?C=S;O=A" -A html
+#wget -nc -r -nH -nd -np -R "\?*" --no-check-certificate https://verification.f-droid.org/ -A txt
+wget -nc -r -nH -nd -np -R "\?*" --no-check-certificate "https://verification.f-droid.org/?C=S;O=A" -A html
 # TODO: ADD TRUNCATE
